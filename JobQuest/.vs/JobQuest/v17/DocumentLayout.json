@@ -3,52 +3,68 @@
   "WorkspaceRootPath": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\PlatformDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\PlatformDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240306213741_stateNUmber2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240306213741_stateNUmber2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305023739_first4tables2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240305023739_first4tables2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\PlatformDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\PlatformDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\jobquest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:jobquest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\jobquest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:jobquest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JobQuest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JobQuest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\platformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\platformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305022958_first4tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240305022958_first4tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\migrations\\20240305022958_first4tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:migrations\\20240305022958_first4tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,116 +74,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 16,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JobQuest",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj",
-              "RelativeDocumentMoniker": "JobQuest.csproj",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj",
-              "RelativeToolTip": "JobQuest.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-05T02:39:59.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JobQuest.http",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
-              "RelativeDocumentMoniker": "JobQuest.http",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
-              "RelativeToolTip": "JobQuest.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-05T02:39:41.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240305023739_first4tables2.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305023739_first4tables2.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240305023739_first4tables2.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305023739_first4tables2.cs",
-              "RelativeToolTip": "Migrations\\20240305023739_first4tables2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T02:37:40.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Freelancer.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs",
-              "RelativeDocumentMoniker": "Models\\Freelancer.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs",
-              "RelativeToolTip": "Models\\Freelancer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T01:22:42.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-05T01:03:23.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240305022958_first4tables.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305022958_first4tables.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240305022958_first4tables.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305022958_first4tables.cs",
-              "RelativeToolTip": "Migrations\\20240305022958_first4tables.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T02:29:58.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Job.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs",
-              "RelativeDocumentMoniker": "Models\\Job.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs",
-              "RelativeToolTip": "Models\\Job.cs",
-              "ViewState": "AQIAAAQAAACgzMzMzMwwwBIAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T02:04:49.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlatformDbContext.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\PlatformDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\PlatformDbContext.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\PlatformDbContext.cs",
-              "RelativeToolTip": "Models\\PlatformDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T00:39:28.18Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -218,20 +126,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAABA/f////8PwBEAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAwAAABgLzMzMzMywBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T02:22:11.528Z",
+              "WhenOpened": "2024-03-06T21:28:50.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "Models\\Contract.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
+              "RelativeToolTip": "Models\\Contract.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T16:51:06.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Freelancer.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs",
+              "RelativeDocumentMoniker": "Models\\Freelancer.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs",
+              "RelativeToolTip": "Models\\Freelancer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T01:22:42.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Job.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs",
+              "RelativeDocumentMoniker": "Models\\Job.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs",
+              "RelativeToolTip": "Models\\Job.cs",
+              "ViewState": "AQIAAA8AAADg/v////8zwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T02:04:49.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlatformDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\PlatformDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\PlatformDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\PlatformDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\PlatformDbContextModelSnapshot.cs",
+              "ViewState": "AQIAABUAAACgMjMzM7MiwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T17:07:22.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Client.cs",
               "RelativeDocumentMoniker": "Models\\Client.cs",
@@ -239,25 +195,63 @@
               "RelativeToolTip": "Models\\Client.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T02:02:39.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T02:02:39.407Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240306213741_stateNUmber2.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240306213741_stateNUmber2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240306213741_stateNUmber2.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240306213741_stateNUmber2.cs",
+              "RelativeToolTip": "Migrations\\20240306213741_stateNUmber2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T21:37:41.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240305023739_first4tables2.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305023739_first4tables2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240305023739_first4tables2.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305023739_first4tables2.cs",
+              "RelativeToolTip": "Migrations\\20240305023739_first4tables2.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwFIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T02:37:40.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlatformDbContext.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\PlatformDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\PlatformDbContext.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\PlatformDbContext.cs",
+              "RelativeToolTip": "Models\\PlatformDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T00:39:28.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-05T01:03:23.822Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T01:23:18.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -265,8 +259,67 @@
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T01:03:15.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T01:03:15.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobQuest.http",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
+              "RelativeDocumentMoniker": "JobQuest.http",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
+              "RelativeToolTip": "JobQuest.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-05T02:39:41.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JobQuest.csproj",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj",
+              "RelativeDocumentMoniker": "JobQuest.csproj",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj",
+              "RelativeToolTip": "JobQuest.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-05T02:39:59.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240305022958_first4tables.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305022958_first4tables.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240305022958_first4tables.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240305022958_first4tables.cs",
+              "RelativeToolTip": "Migrations\\20240305022958_first4tables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T02:29:58.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAABA/f////8PwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T02:22:11.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T01:23:18.59Z"
             }
           ]
         }
