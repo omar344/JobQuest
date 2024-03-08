@@ -1,4 +1,7 @@
 
+using JobQuest.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace JobQuest
 {
 	public class Program
@@ -6,6 +9,13 @@ namespace JobQuest
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
+
+
+			builder.Services.AddDbContext<PlatformDbContext>(
+		    options => options.UseSqlServer(
+		    builder.Configuration.GetConnectionString("ConnectionString")));
+		
+		
 
 			// Add services to the container.
 

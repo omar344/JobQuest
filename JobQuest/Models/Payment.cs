@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Contracts;
 
 namespace JobQuest.Models
 {
@@ -8,18 +8,25 @@ namespace JobQuest.Models
 	{
 		[Key]
 		public int PaymentID { get; set; }
-	    public string PaymentMethod { get; set; }
-	    public DateTime Date { get; set; }
+
+		[Required]
+		public string PaymentMethod { get; set; }
+
+		[Required]
+		public DateTime Date { get; set; }
+
+		[Required]
 		public string Status { get; set; }
-		public string Amount { get; set; }
+
+		[Required]
+		public decimal Amount { get; set; }
 
 		public int ClientID { get; set; }
 
 		[ForeignKey("ClientID")]
-		public Client Client { get; set; }
-		public int ContractID { get; set; }
+		public Client Payer { get; set; }
 
-		[ForeignKey("ContractID")]
 		public Contract Contract { get; set; }
+
 	}
 }
