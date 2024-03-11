@@ -16,9 +16,13 @@ namespace JobQuest.Models
 
 		public string Experience { get; set; }
 
+		public ICollection<Skill> Skills { get; set; }
 		public int? AssignedClientId { get; set; }
 
 		[ForeignKey("AssignedClientId")]
 		public Client AssignedClient { get; set; }
+	    public ICollection<Proposal>Proposals { get; set; }
+
+		public ICollection<Contract> Contracts { get;}
 	}
 }
