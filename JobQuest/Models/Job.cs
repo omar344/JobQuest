@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace JobQuest.Models
 {
@@ -7,22 +9,18 @@ namespace JobQuest.Models
 	{
 		[Key]
 		public int JobID { get; set; }
-
-		[Required]
 		public string JobTitle { get; set; }
-
-		[Required]
 		public string JobDescription { get; set; }
 
 		public decimal JobBudget { get; set; }
-
 		public string JobStatus { get; set; }
 		public string JobCategory { get; set; }
 		public string JobTimeline { get; set; }
 
-		public int ClientID { get; set; }
-
-		[ForeignKey("ClientID")]
-		public Client Client { get; set; }
+		[ForeignKey("Client")]
+		public int? ClientID { get; set; }
+		public virtual Client Client { get; set; }
+		public virtual ICollection<Contract> Contracts { get; set; }
+		public virtual ICollection<Proposal> Proposals { get; set; }
 	}
 }

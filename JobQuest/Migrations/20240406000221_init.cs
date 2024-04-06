@@ -132,13 +132,13 @@ namespace JobQuest.Migrations
                         column: x => x.FreelancerID,
                         principalTable: "Freelancers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Contracts_Jobs_JobID",
                         column: x => x.JobID,
                         principalTable: "Jobs",
                         principalColumn: "JobID",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -162,13 +162,13 @@ namespace JobQuest.Migrations
                         column: x => x.FreelancerID,
                         principalTable: "Freelancers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Proposals_Jobs_JobID",
                         column: x => x.JobID,
                         principalTable: "Jobs",
                         principalColumn: "JobID",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

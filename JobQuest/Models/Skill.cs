@@ -6,9 +6,8 @@ namespace JobQuest.Models
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
+		[ForeignKey(nameof(Freelancer))]
 		public int FreelancerID { get; set; }
-
-		[ForeignKey(nameof(FreelancerID))]
-		public Freelancer Freelancer { get; set; }
+		public virtual Freelancer Freelancer { get; set; }
 	}
 }

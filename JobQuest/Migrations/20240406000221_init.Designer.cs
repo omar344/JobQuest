@@ -4,6 +4,7 @@ using JobQuest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobQuest.Migrations
 {
     [DbContext(typeof(PlatformDbContext))]
-    partial class PlatformDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240406000221_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,7 +87,7 @@ namespace JobQuest.Migrations
                     b.Property<int>("FreelancerID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("JobID")
+                    b.Property<int>("JobID")
                         .HasColumnType("int");
 
                     b.Property<string>("PaymentStatus")
@@ -174,7 +177,7 @@ namespace JobQuest.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("JobID"));
 
-                    b.Property<int?>("ClientID")
+                    b.Property<int>("ClientID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("JobBudget")
@@ -311,14 +314,16 @@ namespace JobQuest.Migrations
                         .HasForeignKey("ClientId");
 
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
-                        .WithMany()
+                        .WithMany("Contracts")
                         .HasForeignKey("FreelancerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("JobQuest.Models.Job", "Job")
                         .WithMany("Contracts")
-                        .HasForeignKey("JobID");
+                        .HasForeignKey("JobID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Freelancer");
 
@@ -340,7 +345,9 @@ namespace JobQuest.Migrations
                 {
                     b.HasOne("JobQuest.Models.Client", "Client")
                         .WithMany("Jobs")
-                        .HasForeignKey("ClientID");
+                        .HasForeignKey("ClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Client");
                 });
@@ -413,6 +420,8 @@ namespace JobQuest.Migrations
 
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
                 {
+                    b.Navigation("Contracts");
+
                     b.Navigation("Proposals");
 
                     b.Navigation("Skills");

@@ -4,6 +4,7 @@ using JobQuest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobQuest.Migrations
 {
     [DbContext(typeof(PlatformDbContext))]
-    partial class PlatformDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240406002035_init2")]
+    partial class init2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -311,7 +314,7 @@ namespace JobQuest.Migrations
                         .HasForeignKey("ClientId");
 
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
-                        .WithMany()
+                        .WithMany("Contracts")
                         .HasForeignKey("FreelancerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -413,6 +416,8 @@ namespace JobQuest.Migrations
 
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
                 {
+                    b.Navigation("Contracts");
+
                     b.Navigation("Proposals");
 
                     b.Navigation("Skills");

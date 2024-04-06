@@ -1,10 +1,13 @@
 
-using JobQuest.Models;
+using JobQuest.Data;
+using JobQuest.DTO;
+using JobQuest.Interface;
+using JobQuest.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest
 {
-	public class Program
+    public class Program
 	{
 		public static void Main(string[] args)
 		{
@@ -14,11 +17,12 @@ namespace JobQuest
 			builder.Services.AddDbContext<PlatformDbContext>(
 		    options => options.UseSqlServer(
 		    builder.Configuration.GetConnectionString("ConnectionString")));
-		
-		
+
+
 
 			// Add services to the container.
-
+			builder.Services.AddScoped<IClientRepository, ClientRepository>();
+			builder.Services.AddScoped<IJobRepository, JobRepository>();
 			builder.Services.AddControllers();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();

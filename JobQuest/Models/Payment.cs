@@ -18,15 +18,16 @@ namespace JobQuest.Models
 		[Required]
 		public string Status { get; set; }
 
-		[Required]
+		[Required(ErrorMessage = "Payment amount is required")]
 		public decimal Amount { get; set; }
 
+		[ForeignKey(nameof(Payer))]
 		public int ClientID { get; set; }
+		public virtual Client Payer { get; set; }
 
-		[ForeignKey("ClientID")]
-		public Client Payer { get; set; }
+		[ForeignKey(nameof(Contract))]
+		public int ContractID { get; set; }
 
 		public Contract Contract { get; set; }
-
 	}
 }
