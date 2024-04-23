@@ -22,7 +22,7 @@
   <li>Entity Framework Core for data access and ORM.</li>
   <li>C# programming language for server-side logic.</li>
   <li>Dependency Injection for managing dependencies.</li>
-  <li>NUnit/MSTest for unit testing.</li>
+<!--  <li>NUnit/MSTest for unit testing.</li>!-->
   <li>GitHub for version control and collaboration.</li>
 </ul>
 
