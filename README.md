@@ -22,11 +22,11 @@
   <li>Entity Framework Core for data access and ORM.</li>
   <li>C# programming language for server-side logic.</li>
   <li>Dependency Injection for managing dependencies.</li>
-  <li>NUnit/MSTest for unit testing.</li>
+<!--  <li>NUnit/MSTest for unit testing.</li>!-->
   <li>GitHub for version control and collaboration.</li>
 </ul>
 
-<h2>Getting Started: soon!</h2>
+<!--<h2>Getting Started: soon!</h2>
 <!-- <p>To get started with the project, follow the instructions provided in the README.md file in the project repository. The README includes guidelines for setting up the development environment, running the application locally, and contributing to the project.</p> -->
 
 <!-- <h2>Contact:</h2>
