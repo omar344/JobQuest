@@ -14,7 +14,7 @@ namespace JobQuest
 			var builder = WebApplication.CreateBuilder(args);
 
 
-			builder.Services.AddDbContext<PlatformDbContext>(
+			builder.Services.AddDbContext<PlatformDataDbContext>(
 		    options => options.UseSqlServer(
 		    builder.Configuration.GetConnectionString("ConnectionString")));
 
