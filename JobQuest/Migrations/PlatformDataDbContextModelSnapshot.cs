@@ -4,23 +4,20 @@ using JobQuest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace JobQuest.Migrations
 {
-    [DbContext(typeof(PlatformDbContext))]
-    [Migration("20240406004946_init4")]
-    partial class init4
+    [DbContext(typeof(PlatformDataDbContext))]
+    partial class PlatformDataDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -33,7 +30,7 @@ namespace JobQuest.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
+                    b.Property<string>("Country")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -69,12 +66,9 @@ namespace JobQuest.Migrations
             modelBuilder.Entity("JobQuest.Models.Contract", b =>
                 {
                     b.Property<int>("ContractID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContractID"));
-
-                    b.Property<int?>("ClientId")
+                    b.Property<int>("ClientID")
                         .HasColumnType("int");
 
                     b.Property<string>("ContractStatus")
@@ -87,29 +81,32 @@ namespace JobQuest.Migrations
                     b.Property<int>("FreelancerID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("JobID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PaymentStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ScopeOfWork")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ContractID");
 
-                    b.HasIndex("ClientId");
+                    b.HasIndex("ClientID");
 
                     b.HasIndex("FreelancerID");
 
-                    b.HasIndex("JobID");
-
                     b.ToTable("Contracts");
+                });
+
+            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
+                {
+                    b.Property<int>("JobID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ContractID")
+                        .HasColumnType("int");
+
+                    b.HasKey("JobID", "ContractID");
+
+                    b.HasIndex("ContractID")
+                        .IsUnique();
+
+                    b.ToTable("ContractOfJobs");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
@@ -120,12 +117,9 @@ namespace JobQuest.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
+                    b.Property<string>("Country")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("AssignedClientId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -164,20 +158,15 @@ namespace JobQuest.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AssignedClientId");
-
                     b.ToTable("Freelancers");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
                     b.Property<int>("JobID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("JobID"));
-
-                    b.Property<int?>("ClientID")
+                    b.Property<int>("ClientID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("JobBudget")
@@ -188,10 +177,6 @@ namespace JobQuest.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("JobDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("JobStatus")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -230,7 +215,7 @@ namespace JobQuest.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("PaymentMethod")
+                    b.Property<string>("PaymentType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -241,9 +226,6 @@ namespace JobQuest.Migrations
                     b.HasKey("PaymentID");
 
                     b.HasIndex("ClientID");
-
-                    b.HasIndex("ContractID")
-                        .IsUnique();
 
                     b.ToTable("Payments");
                 });
@@ -269,13 +251,6 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("SubmittedAt")
-                        .HasColumnType("datetime2");
-
                     b.HasKey("ProposalID");
 
                     b.HasIndex("FreelancerID");
@@ -285,13 +260,35 @@ namespace JobQuest.Migrations
                     b.ToTable("Proposals");
                 });
 
+            modelBuilder.Entity("JobQuest.Models.ProposalSubmission", b =>
+                {
+                    b.Property<int>("ProposalID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("jobID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SubmittedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ProposalID", "jobID");
+
+                    b.HasIndex("jobID");
+
+                    b.ToTable("ProposalSubmissions");
+                });
+
             modelBuilder.Entity("JobQuest.Models.Skill", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("SkillID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillID"));
 
                     b.Property<int>("FreelancerID")
                         .HasColumnType("int");
@@ -300,7 +297,7 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("SkillID");
 
                     b.HasIndex("FreelancerID");
 
@@ -309,62 +306,71 @@ namespace JobQuest.Migrations
 
             modelBuilder.Entity("JobQuest.Models.Contract", b =>
                 {
-                    b.HasOne("JobQuest.Models.Client", null)
-                        .WithMany("Contracts")
-                        .HasForeignKey("ClientId");
+                    b.HasOne("JobQuest.Models.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JobQuest.Models.Payment", "Payment")
+                        .WithOne("Contract")
+                        .HasForeignKey("JobQuest.Models.Contract", "ContractID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
-                        .WithMany()
+                        .WithMany("Contracts")
                         .HasForeignKey("FreelancerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("JobQuest.Models.Job", "Job")
-                        .WithMany("Contracts")
-                        .HasForeignKey("JobID");
+                    b.Navigation("Client");
 
                     b.Navigation("Freelancer");
 
-                    b.Navigation("Job");
+                    b.Navigation("Payment");
                 });
 
-            modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
+            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
                 {
-                    b.HasOne("JobQuest.Models.Client", "AssignedClient")
-                        .WithMany("Freelancers")
-                        .HasForeignKey("AssignedClientId")
+                    b.HasOne("JobQuest.Models.Contract", "Contract")
+                        .WithOne("ContractOfJob")
+                        .HasForeignKey("JobQuest.Models.ContractOfJob", "ContractID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("AssignedClient");
+                    b.Navigation("Contract");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
                     b.HasOne("JobQuest.Models.Client", "Client")
                         .WithMany("Jobs")
-                        .HasForeignKey("ClientID");
-
-                    b.Navigation("Client");
-                });
-
-            modelBuilder.Entity("JobQuest.Models.Payment", b =>
-                {
-                    b.HasOne("JobQuest.Models.Client", "Payer")
-                        .WithMany("PaymentOperations")
                         .HasForeignKey("ClientID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("JobQuest.Models.Contract", "Contract")
-                        .WithOne("Payment")
-                        .HasForeignKey("JobQuest.Models.Payment", "ContractID")
+                    b.HasOne("JobQuest.Models.ContractOfJob", "ContractOfJob")
+                        .WithOne("Job")
+                        .HasForeignKey("JobQuest.Models.Job", "JobID")
+                        .HasPrincipalKey("JobQuest.Models.ContractOfJob", "JobID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Contract");
+                    b.Navigation("Client");
 
-                    b.Navigation("Payer");
+                    b.Navigation("ContractOfJob");
+                });
+
+            modelBuilder.Entity("JobQuest.Models.Payment", b =>
+                {
+                    b.HasOne("JobQuest.Models.Client", "Client")
+                        .WithMany("Payments")
+                        .HasForeignKey("ClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Proposal", b =>
@@ -375,21 +381,40 @@ namespace JobQuest.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("JobQuest.Models.Job", "Job")
+                    b.HasOne("JobQuest.Models.Job", "AssociatedJob")
                         .WithMany("Proposals")
                         .HasForeignKey("JobID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("AssociatedJob");
+
                     b.Navigation("Freelancer");
+                });
+
+            modelBuilder.Entity("JobQuest.Models.ProposalSubmission", b =>
+                {
+                    b.HasOne("JobQuest.Models.Proposal", "Proposal")
+                        .WithMany("ProposalSubmissions")
+                        .HasForeignKey("ProposalID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JobQuest.Models.Job", "Job")
+                        .WithMany("ProposalSubmissions")
+                        .HasForeignKey("jobID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Job");
+
+                    b.Navigation("Proposal");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Skill", b =>
                 {
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
-                        .WithMany("Skills")
+                        .WithMany("FreelancerSkills")
                         .HasForeignKey("FreelancerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -399,33 +424,48 @@ namespace JobQuest.Migrations
 
             modelBuilder.Entity("JobQuest.Models.Client", b =>
                 {
-                    b.Navigation("Contracts");
-
-                    b.Navigation("Freelancers");
-
                     b.Navigation("Jobs");
 
-                    b.Navigation("PaymentOperations");
+                    b.Navigation("Payments");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Contract", b =>
                 {
-                    b.Navigation("Payment")
+                    b.Navigation("ContractOfJob")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
+                {
+                    b.Navigation("Job")
                         .IsRequired();
                 });
 
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
                 {
-                    b.Navigation("Proposals");
+                    b.Navigation("Contracts");
 
-                    b.Navigation("Skills");
+                    b.Navigation("FreelancerSkills");
+
+                    b.Navigation("Proposals");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
-                    b.Navigation("Contracts");
+                    b.Navigation("ProposalSubmissions");
 
                     b.Navigation("Proposals");
+                });
+
+            modelBuilder.Entity("JobQuest.Models.Payment", b =>
+                {
+                    b.Navigation("Contract")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("JobQuest.Models.Proposal", b =>
+                {
+                    b.Navigation("ProposalSubmissions");
                 });
 #pragma warning restore 612, 618
         }

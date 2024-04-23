@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace JobQuest.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class CreateInitialModels : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,7 +22,7 @@ namespace JobQuest.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -39,23 +39,113 @@ namespace JobQuest.Migrations
                     Specialization = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HourlyRate = table.Column<int>(type: "int", nullable: false),
                     Experience = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AssignedClientId = table.Column<int>(type: "int", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Freelancers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Payments",
+                columns: table => new
+                {
+                    PaymentID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PaymentType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ClientID = table.Column<int>(type: "int", nullable: false),
+                    ContractID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Payments", x => x.PaymentID);
                     table.ForeignKey(
-                        name: "FK_Freelancers_Clients_AssignedClientId",
-                        column: x => x.AssignedClientId,
+                        name: "FK_Payments_Clients_ClientID",
+                        column: x => x.ClientID,
                         principalTable: "Clients",
                         principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Skills",
+                columns: table => new
+                {
+                    SkillID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FreelancerID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Skills", x => x.SkillID);
+                    table.ForeignKey(
+                        name: "FK_Skills_Freelancers_FreelancerID",
+                        column: x => x.FreelancerID,
+                        principalTable: "Freelancers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Contracts",
+                columns: table => new
+                {
+                    ContractID = table.Column<int>(type: "int", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ContractStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FreelancerID = table.Column<int>(type: "int", nullable: false),
+                    ClientID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Contracts", x => x.ContractID);
+                    table.ForeignKey(
+                        name: "FK_Contracts_Clients_ClientID",
+                        column: x => x.ClientID,
+                        principalTable: "Clients",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Contracts_Freelancers_FreelancerID",
+                        column: x => x.FreelancerID,
+                        principalTable: "Freelancers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Contracts_Payments_ContractID",
+                        column: x => x.ContractID,
+                        principalTable: "Payments",
+                        principalColumn: "PaymentID",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ContractOfJobs",
+                columns: table => new
+                {
+                    JobID = table.Column<int>(type: "int", nullable: false),
+                    ContractID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContractOfJobs", x => new { x.JobID, x.ContractID });
+                    table.UniqueConstraint("AK_ContractOfJobs_JobID", x => x.JobID);
+                    table.ForeignKey(
+                        name: "FK_ContractOfJobs_Contracts_ContractID",
+                        column: x => x.ContractID,
+                        principalTable: "Contracts",
+                        principalColumn: "ContractID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -63,12 +153,10 @@ namespace JobQuest.Migrations
                 name: "Jobs",
                 columns: table => new
                 {
-                    JobID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    JobID = table.Column<int>(type: "int", nullable: false),
                     JobTitle = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobBudget = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    JobStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobCategory = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobTimeline = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ClientID = table.Column<int>(type: "int", nullable: false)
@@ -82,63 +170,12 @@ namespace JobQuest.Migrations
                         principalTable: "Clients",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Skills",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FreelancerID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Skills", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Skills_Freelancers_FreelancerID",
-                        column: x => x.FreelancerID,
-                        principalTable: "Freelancers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Contracts",
-                columns: table => new
-                {
-                    ContractID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    PaymentStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ContractStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ScopeOfWork = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FreelancerID = table.Column<int>(type: "int", nullable: false),
-                    JobID = table.Column<int>(type: "int", nullable: false),
-                    ClientId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Contracts", x => x.ContractID);
-                    table.ForeignKey(
-                        name: "FK_Contracts_Clients_ClientId",
-                        column: x => x.ClientId,
-                        principalTable: "Clients",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Contracts_Freelancers_FreelancerID",
-                        column: x => x.FreelancerID,
-                        principalTable: "Freelancers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Contracts_Jobs_JobID",
+                        name: "FK_Jobs_ContractOfJobs_JobID",
                         column: x => x.JobID,
-                        principalTable: "Jobs",
+                        principalTable: "ContractOfJobs",
                         principalColumn: "JobID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -149,8 +186,6 @@ namespace JobQuest.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProposalText = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BidAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    SubmittedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     JobID = table.Column<int>(type: "int", nullable: false),
                     FreelancerID = table.Column<int>(type: "int", nullable: false)
                 },
@@ -172,54 +207,46 @@ namespace JobQuest.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Payments",
+                name: "ProposalSubmissions",
                 columns: table => new
                 {
-                    PaymentID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    PaymentMethod = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ProposalID = table.Column<int>(type: "int", nullable: false),
+                    jobID = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ClientID = table.Column<int>(type: "int", nullable: false),
-                    ContractID = table.Column<int>(type: "int", nullable: false)
+                    SubmittedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Payments", x => x.PaymentID);
+                    table.PrimaryKey("PK_ProposalSubmissions", x => new { x.ProposalID, x.jobID });
                     table.ForeignKey(
-                        name: "FK_Payments_Clients_ClientID",
-                        column: x => x.ClientID,
-                        principalTable: "Clients",
-                        principalColumn: "Id",
+                        name: "FK_ProposalSubmissions_Jobs_jobID",
+                        column: x => x.jobID,
+                        principalTable: "Jobs",
+                        principalColumn: "JobID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Payments_Contracts_ContractID",
-                        column: x => x.ContractID,
-                        principalTable: "Contracts",
-                        principalColumn: "ContractID",
-                        onDelete: ReferentialAction.Cascade);
+                        name: "FK_ProposalSubmissions_Proposals_ProposalID",
+                        column: x => x.ProposalID,
+                        principalTable: "Proposals",
+                        principalColumn: "ProposalID",
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Contracts_ClientId",
+                name: "IX_ContractOfJobs_ContractID",
+                table: "ContractOfJobs",
+                column: "ContractID",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Contracts_ClientID",
                 table: "Contracts",
-                column: "ClientId");
+                column: "ClientID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Contracts_FreelancerID",
                 table: "Contracts",
                 column: "FreelancerID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Contracts_JobID",
-                table: "Contracts",
-                column: "JobID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Freelancers_AssignedClientId",
-                table: "Freelancers",
-                column: "AssignedClientId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Jobs_ClientID",
@@ -232,12 +259,6 @@ namespace JobQuest.Migrations
                 column: "ClientID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Payments_ContractID",
-                table: "Payments",
-                column: "ContractID",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Proposals_FreelancerID",
                 table: "Proposals",
                 column: "FreelancerID");
@@ -246,6 +267,11 @@ namespace JobQuest.Migrations
                 name: "IX_Proposals_JobID",
                 table: "Proposals",
                 column: "JobID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProposalSubmissions_jobID",
+                table: "ProposalSubmissions",
+                column: "jobID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Skills_FreelancerID",
@@ -257,13 +283,19 @@ namespace JobQuest.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Payments");
+                name: "ProposalSubmissions");
+
+            migrationBuilder.DropTable(
+                name: "Skills");
 
             migrationBuilder.DropTable(
                 name: "Proposals");
 
             migrationBuilder.DropTable(
-                name: "Skills");
+                name: "Jobs");
+
+            migrationBuilder.DropTable(
+                name: "ContractOfJobs");
 
             migrationBuilder.DropTable(
                 name: "Contracts");
@@ -272,7 +304,7 @@ namespace JobQuest.Migrations
                 name: "Freelancers");
 
             migrationBuilder.DropTable(
-                name: "Jobs");
+                name: "Payments");
 
             migrationBuilder.DropTable(
                 name: "Clients");
