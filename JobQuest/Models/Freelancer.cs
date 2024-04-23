@@ -11,12 +11,8 @@ namespace JobQuest.Models
 
 		public string Experience { get; set; }
 
-		public ICollection<Skill> Skills { get; set; }
-		[ForeignKey("AssignedClient")]
-		public  int AssignedClientId { get; set; }
-		public virtual Client AssignedClient { get; set; }
-	    public virtual ICollection<Proposal>Proposals { get; set; }
-
-		//public virtual ICollection<Contract> Contracts { get;}
+		public virtual ICollection<Contract> Contracts { get; set; }
+		public virtual ICollection<Proposal> Proposals { get; set; }
+		public virtual ICollection<Skill>FreelancerSkills { get; set; }
 	}
 }

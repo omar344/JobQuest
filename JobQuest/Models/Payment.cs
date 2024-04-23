@@ -6,28 +6,15 @@ namespace JobQuest.Models
 {
 	public class Payment
 	{
-		[Key]
 		public int PaymentID { get; set; }
-
-		[Required]
-		public string PaymentMethod { get; set; }
-
-		[Required]
+		public string PaymentType{ get; set; }
 		public DateTime Date { get; set; }
-
-		[Required]
 		public string Status { get; set; }
-
-		[Required(ErrorMessage = "Payment amount is required")]
 		public decimal Amount { get; set; }
-
-		[ForeignKey(nameof(Payer))]
 		public int ClientID { get; set; }
-		public virtual Client Payer { get; set; }
-
-		[ForeignKey(nameof(Contract))]
+		public virtual Client Client { get; set; }
 		public int ContractID { get; set; }
-
-		public Contract Contract { get; set; }
+		public virtual Contract Contract { get; set; }
 	}
 }
+																									
