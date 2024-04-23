@@ -8,9 +8,9 @@ namespace JobQuest.Repository
 {
     public class ClientRepository : IClientRepository
 	{
-		PlatformDbContext _context;
+		PlatformDataDbContext _context;
 
-		public ClientRepository(PlatformDbContext context) 
+		public ClientRepository(PlatformDataDbContext context) 
 		{
 			_context = context;
 		}
@@ -23,7 +23,7 @@ namespace JobQuest.Repository
 			Client old = GetById(id);
 			old.FirstName = client.FirstName;
 			old.LastName = client.LastName;
-			old.Address = client.Address;
+			//old.Address = client.Address;
 			old.Email = client.Email;
 			old.Phone = client.Phone;
 			_context.SaveChanges();

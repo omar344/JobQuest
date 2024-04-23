@@ -8,9 +8,9 @@ namespace JobQuest.Repository
 {
     public class JobRepository:IJobRepository
 	{
-		PlatformDbContext _context;
+		PlatformDataDbContext _context;
 
-		public JobRepository(PlatformDbContext context)
+		public JobRepository(PlatformDataDbContext context)
 		{
 			_context = context;
 		}
@@ -25,7 +25,7 @@ namespace JobQuest.Repository
 			{
 				JobTitle = jobDTO.JobTitle,
 				JobDescription = jobDTO.JobDescription,
-				JobStatus = jobDTO.JobStatus,
+				//JobStatus = jobDTO.JobStatus,
 				JobCategory = jobDTO.JobCategory,
 				JobTimeline = "Test"
 			};
@@ -37,7 +37,7 @@ namespace JobQuest.Repository
 			Job postedJob = GetById(id);
 			postedJob.JobTitle = job.JobTitle;
 			postedJob.JobDescription = job.JobDescription;
-			postedJob.JobStatus = job.JobStatus;
+			//postedJob.JobStatus = job.JobStatus;
 			postedJob.JobCategory = job.JobCategory;
 
 			_context.SaveChanges();
