@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a8144cb385fc18d5e7d5cf3f7a5314a97e2b862")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+824f3866a251b4ceedce77c520b0e37e107af08d")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

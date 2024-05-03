@@ -6,48 +6,70 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Repository
 {
-    public class JobRepository:IJobRepository
-	{
-		PlatformDataDbContext _context;
-
-		public JobRepository(PlatformDataDbContext context)
+    public class JobRepository(PlatformDataDbContext context):IJobRepository
+	{ 
+		public async Task<Job?> GetByIdAsync(int id)
 		{
-			_context = context;
-		}
-		public Job GetById(int id)
-		{
-			return _context.Jobs.SingleOrDefault(d => d.JobID== id);
+			return await context.Jobs.SingleOrDefaultAsync(d => d != null && d.JobID == id) ;
 		}
 
-		public void Add(JobDTO jobDTO)
+
+		public async Task AddAsync(JobDTO jobDto)
 		{
 			var job = new Job
 			{
-				JobTitle = jobDTO.JobTitle,
-				JobDescription = jobDTO.JobDescription,
-				//JobStatus = jobDTO.JobStatus,
-				JobCategory = jobDTO.JobCategory,
-				JobTimeline = "Test"
+				ClientID = jobDto.ClientID,
+				JobTitle = jobDto.JobTitle,
+				JobDescription = jobDto.JobDescription,
+				JobCategory = jobDto.Category, 
+				JobBudget = jobDto.JobBudget,
+				JobTimeline = jobDto.JobTimeline
 			};
-			_context.Jobs.Add(job);
-			_context.SaveChanges();
-		}
-		public void Edit(int id, JobDTO job)
-		{
-			Job postedJob = GetById(id);
-			postedJob.JobTitle = job.JobTitle;
-			postedJob.JobDescription = job.JobDescription;
-			//postedJob.JobStatus = job.JobStatus;
-			postedJob.JobCategory = job.JobCategory;
 
-			_context.SaveChanges();
+			context.Jobs.Add(job);
+			await context.SaveChangesAsync();
 		}
 
-		public void Delete(int id)
+		public async Task EditAsync(int id, JobDTO jobDto)
 		{
-			Job postedJob = GetById(id);
-			_context.Jobs.Remove(postedJob);
-			_context.SaveChanges();	
+			Job? postedJob = await GetByIdAsync(id);
+			if (postedJob != null)
+			{
+				// Update properties
+				postedJob.JobTitle = jobDto.JobTitle;
+				postedJob.JobDescription = jobDto.JobDescription;
+				postedJob.JobCategory =jobDto.Category;
+				postedJob.JobBudget = jobDto.JobBudget;
+				postedJob.JobTimeline = jobDto.JobTimeline;
+
+				await context.SaveChangesAsync(); // Save changes asynchronously
+			}
 		}
+
+
+		public async Task DeleteAsync(int id)
+		{
+			Job? postedJob = await GetByIdAsync(id);
+			if (postedJob != null)
+			{
+				context.Jobs.Remove(postedJob);
+				await context.SaveChangesAsync();
+			}
+		}
+		public async Task<List<Job?>> GetJobsByCategory(JobCategoryEnum category)
+		{
+			return await context.Jobs.Where(j => j.JobCategory == category).ToListAsync();
+		}
+
+		public async Task<List<Job?>> GetJobByBudget(int budget,bool select)
+		{
+			if(select)
+				return await context.Jobs.Where(j => j.JobBudget <= budget).ToListAsync();
+			else
+			{
+				return await context.Jobs.Where(j => j.JobBudget >= budget).ToListAsync();
+			}
+		}
+
 	}
 }

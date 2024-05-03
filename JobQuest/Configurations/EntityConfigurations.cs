@@ -54,19 +54,7 @@ namespace JobQuest.Configurations
 		}
 	}
 
-	public class ContractOfJobConfigurations : IEntityTypeConfiguration<ContractOfJob>
-	{
-		public void Configure(EntityTypeBuilder<ContractOfJob> builder)
-		{
-			builder
-				.HasKey(p => new { p.JobID, p.ContractID });
-          builder
-				.HasOne(pt => pt.Job)
-			    .WithOne(p => p.ContractOfJob)
-			   .HasForeignKey<Job>(j => j.JobID)
-			   .HasPrincipalKey<ContractOfJob>(pt => pt.JobID);
-		}
-	}
+
 
 	public class JobConfigurations : IEntityTypeConfiguration<Job>
 	{
@@ -74,6 +62,9 @@ namespace JobQuest.Configurations
 		{
 			builder
 				.HasKey(pt => pt.JobID);
+			builder
+				.Property(j => j.JobID)
+				.ValueGeneratedOnAdd();
 			builder
 				.Property(p => p.JobTitle)
 				.IsRequired();
@@ -142,31 +133,16 @@ namespace JobQuest.Configurations
 			builder
 				.Property(p => p.BidAmount)
 				.IsRequired();
-		}
-	}
-
-	public class ProposalSubmissionConfigurations : IEntityTypeConfiguration<ProposalSubmission>
-	{
-		public void Configure(EntityTypeBuilder<ProposalSubmission> builder)
-		{
-			builder
-				.HasKey(pt => new {pt.ProposalID,pt.jobID});
-			builder
-				.HasOne(pt => pt.Job)
-				.WithMany(p => p.ProposalSubmissions)
-				.HasForeignKey(fk => fk.jobID);
-			builder
-				.HasOne(p => p.Proposal)
-				.WithMany(p => p.ProposalSubmissions)
-				.HasForeignKey(fk => fk.ProposalID);
-			builder
-				.Property(p => p.SubmittedAt)
-				.IsRequired();
 			builder
 				.Property(p => p.Status)
 				.IsRequired();
+			builder
+				.Property(p => p.SubmittedAt)
+				.IsRequired();
 		}
 	}
+
+
 
 	public class SkillConfigurations : IEntityTypeConfiguration<Skill>
 	{

@@ -54,7 +54,7 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -91,22 +91,6 @@ namespace JobQuest.Migrations
                     b.HasIndex("FreelancerID");
 
                     b.ToTable("Contracts");
-                });
-
-            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
-                {
-                    b.Property<int>("JobID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ContractID")
-                        .HasColumnType("int");
-
-                    b.HasKey("JobID", "ContractID");
-
-                    b.HasIndex("ContractID")
-                        .IsUnique();
-
-                    b.ToTable("ContractOfJobs");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
@@ -152,7 +136,7 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -164,7 +148,10 @@ namespace JobQuest.Migrations
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
                     b.Property<int>("JobID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("JobID"));
 
                     b.Property<int>("ClientID")
                         .HasColumnType("int");
@@ -172,9 +159,8 @@ namespace JobQuest.Migrations
                     b.Property<decimal>("JobBudget")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("JobCategory")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("JobCategory")
+                        .HasColumnType("int");
 
                     b.Property<string>("JobDescription")
                         .IsRequired()
@@ -251,6 +237,12 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("SubmittedAt")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("ProposalID");
 
                     b.HasIndex("FreelancerID");
@@ -258,28 +250,6 @@ namespace JobQuest.Migrations
                     b.HasIndex("JobID");
 
                     b.ToTable("Proposals");
-                });
-
-            modelBuilder.Entity("JobQuest.Models.ProposalSubmission", b =>
-                {
-                    b.Property<int>("ProposalID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("jobID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("SubmittedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ProposalID", "jobID");
-
-                    b.HasIndex("jobID");
-
-                    b.ToTable("ProposalSubmissions");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Skill", b =>
@@ -331,17 +301,6 @@ namespace JobQuest.Migrations
                     b.Navigation("Payment");
                 });
 
-            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
-                {
-                    b.HasOne("JobQuest.Models.Contract", "Contract")
-                        .WithOne("ContractOfJob")
-                        .HasForeignKey("JobQuest.Models.ContractOfJob", "ContractID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Contract");
-                });
-
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
                     b.HasOne("JobQuest.Models.Client", "Client")
@@ -350,16 +309,7 @@ namespace JobQuest.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("JobQuest.Models.ContractOfJob", "ContractOfJob")
-                        .WithOne("Job")
-                        .HasForeignKey("JobQuest.Models.Job", "JobID")
-                        .HasPrincipalKey("JobQuest.Models.ContractOfJob", "JobID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Client");
-
-                    b.Navigation("ContractOfJob");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Payment", b =>
@@ -392,25 +342,6 @@ namespace JobQuest.Migrations
                     b.Navigation("Freelancer");
                 });
 
-            modelBuilder.Entity("JobQuest.Models.ProposalSubmission", b =>
-                {
-                    b.HasOne("JobQuest.Models.Proposal", "Proposal")
-                        .WithMany("ProposalSubmissions")
-                        .HasForeignKey("ProposalID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("JobQuest.Models.Job", "Job")
-                        .WithMany("ProposalSubmissions")
-                        .HasForeignKey("jobID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Job");
-
-                    b.Navigation("Proposal");
-                });
-
             modelBuilder.Entity("JobQuest.Models.Skill", b =>
                 {
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
@@ -429,18 +360,6 @@ namespace JobQuest.Migrations
                     b.Navigation("Payments");
                 });
 
-            modelBuilder.Entity("JobQuest.Models.Contract", b =>
-                {
-                    b.Navigation("ContractOfJob")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("JobQuest.Models.ContractOfJob", b =>
-                {
-                    b.Navigation("Job")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
                 {
                     b.Navigation("Contracts");
@@ -452,8 +371,6 @@ namespace JobQuest.Migrations
 
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
-                    b.Navigation("ProposalSubmissions");
-
                     b.Navigation("Proposals");
                 });
 
@@ -461,11 +378,6 @@ namespace JobQuest.Migrations
                 {
                     b.Navigation("Contract")
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("JobQuest.Models.Proposal", b =>
-                {
-                    b.Navigation("ProposalSubmissions");
                 });
 #pragma warning restore 612, 618
         }

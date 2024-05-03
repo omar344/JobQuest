@@ -10,7 +10,9 @@ namespace JobQuest.DTO
 		public string LastName { get; set; }
 		[Required]
 		public string Email { get; set; }
-		public string Address { get; set; }
+		[Required]
+		public string Country { get; set; }
+		[Required]
 		public string Phone { get; set; }
 	}
 }

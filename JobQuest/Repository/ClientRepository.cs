@@ -6,28 +6,40 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Repository
 {
-    public class ClientRepository : IClientRepository
+    public class ClientRepository(PlatformDataDbContext context)  : IClientRepository
 	{
-		PlatformDataDbContext _context;
-
-		public ClientRepository(PlatformDataDbContext context) 
+		public void Add(ClientDTO clientDto)
 		{
-			_context = context;
+			var client = new Client
+			{
+				FirstName = clientDto.FirstName,
+				LastName = clientDto.LastName,
+				Email = clientDto.Email,
+				Country = clientDto.Country,
+				Phone = clientDto.Phone,
+				Username = "OMar321",
+				Password = "*****************"
+			};
+
+			context.Clients.Add(client);
+			context.SaveChanges();
+
 		}
 		public Client GetById(int id)
 		{
-			return _context.Clients.SingleOrDefault(d => d.Id == id);
+			return context.Clients.SingleOrDefault(d => d.Id == id);
 		}
 		public void Edit(int id, ClientDTO client)
 		{
 			Client old = GetById(id);
 			old.FirstName = client.FirstName;
 			old.LastName = client.LastName;
-			//old.Address = client.Address;
 			old.Email = client.Email;
+			old.Country = client.Country;
 			old.Phone = client.Phone;
-			_context.SaveChanges();
+			context.SaveChanges();
 
 		}
+
 	}
 }

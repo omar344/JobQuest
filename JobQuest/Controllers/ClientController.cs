@@ -15,7 +15,16 @@ namespace JobQuest.Controllers
 		{
 			_clientRepo = clientRepo;
 		}
-
+		[HttpPut]
+     public IActionResult Add([FromBody] ClientDTO client)
+		{
+			if(ModelState.IsValid)
+			{
+				_clientRepo.Add(client);
+				return StatusCode(204, "Data Saved");
+			}
+			return BadRequest(client);
+		}
 		[HttpPut("{id:int}")]
 		public IActionResult Update([FromRoute] int id, [FromBody] ClientDTO client)
 		{

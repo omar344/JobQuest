@@ -23,6 +23,7 @@ namespace JobQuest
 			// Add services to the container.
 			builder.Services.AddScoped<IClientRepository, ClientRepository>();
 			builder.Services.AddScoped<IJobRepository, JobRepository>();
+			builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
 			builder.Services.AddControllers();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();

@@ -16,7 +16,6 @@ namespace JobQuest.Models
 		public int ClientID { get; set; }
 		public virtual Client Client { get; set; }
 		public virtual Payment Payment { get; set; }
-		public virtual ContractOfJob ContractOfJob { get; set; }
 
 
 	}
