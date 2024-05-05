@@ -3,6 +3,48 @@
   "WorkspaceRootPath": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\repository\\contractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:repository\\contractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/OMAR/MyDatabase/True/SqlTable/dbo.Freelancers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/OMAR/MyDatabase/True/SqlTable/dbo.Clients.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\migrations\\20240505110538_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:migrations\\20240505110538_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240505110125_editPayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240505110125_editPayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\configurations\\entityconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:configurations\\entityconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\jobquest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:jobquest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +59,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\interface\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:interface\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\configurations\\entityconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:configurations\\entityconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,15 +80,7 @@
       "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/OMAR/AppDatabase2/True/SqlTable/dbo.Jobs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\jobquest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -69,10 +95,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|solutionrelative:models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A71CF242-57DA-4AD3-AD28-0C539B525147}|JobQuest.csproj|d:\\freelancingplatform\\jobquest\\jobquest\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,7 +119,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -149,44 +171,148 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JobRepository.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\JobRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\JobRepository.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\JobRepository.cs",
-              "RelativeToolTip": "Repository\\JobRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAtAAAA",
+              "DocumentIndex": 0,
+              "Title": "ContractRepository.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\ContractRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ContractRepository.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\ContractRepository.cs",
+              "RelativeToolTip": "Repository\\ContractRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:22:15.006Z"
+              "WhenOpened": "2024-05-05T11:10:50.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EntityConfigurations.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Configurations\\EntityConfigurations.cs",
-              "RelativeDocumentMoniker": "Configurations\\EntityConfigurations.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Configurations\\EntityConfigurations.cs",
-              "RelativeToolTip": "Configurations\\EntityConfigurations.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAkwE0AAAAYAAAA",
+              "Title": "20240505110538_Initial.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240505110538_Initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240505110538_Initial.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240505110538_Initial.cs",
+              "RelativeToolTip": "Migrations\\20240505110538_Initial.cs",
+              "ViewState": "AQIAAJIAAAAAppmZmZkdwLgAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:40:20.059Z"
+              "WhenOpened": "2024-05-05T11:05:39.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JobController.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\JobController.cs",
-              "RelativeDocumentMoniker": "Controllers\\JobController.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\JobController.cs",
-              "RelativeToolTip": "Controllers\\JobController.cs",
-              "ViewState": "AQIAAFQAAACgmJmZmZk9wGoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:32:30.269Z",
+              "DocumentIndex": 2,
+              "Title": "dbo.Clients [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/MyDatabase/True/SqlTable/dbo.Clients.sql",
+              "ToolTip": "dbo.Clients [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-05T10:47:02.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T18:01:46.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Freelancers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/MyDatabase/True/SqlTable/dbo.Freelancers.sql",
+              "ToolTip": "dbo.Freelancers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-05T10:47:54.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240505110125_editPayment.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240505110125_editPayment.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240505110125_editPayment.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Migrations\\20240505110125_editPayment.cs",
+              "RelativeToolTip": "Migrations\\20240505110125_editPayment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T11:01:25.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EntityConfigurations.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Configurations\\EntityConfigurations.cs",
+              "RelativeDocumentMoniker": "Configurations\\EntityConfigurations.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Configurations\\EntityConfigurations.cs",
+              "RelativeToolTip": "Configurations\\EntityConfigurations.cs",
+              "ViewState": "AQIAAE8AAAAAKTMzMzMXwHAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:40:20.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "Models\\Contract.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
+              "RelativeToolTip": "Models\\Contract.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:41:19.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAACoZWZmZmYkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:32:12.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAADAMTMzMzMrwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T18:02:01.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JobQuest.http",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
+              "RelativeDocumentMoniker": "JobQuest.http",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.http",
+              "RelativeToolTip": "JobQuest.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-05T10:51:50.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "IJobRepository.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Interface\\IJobRepository.cs",
               "RelativeDocumentMoniker": "Interface\\IJobRepository.cs",
@@ -198,7 +324,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
+              "Title": "JobController.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\JobController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JobController.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\JobController.cs",
+              "RelativeToolTip": "Controllers\\JobController.cs",
+              "ViewState": "AQIAAFQAAACgmJmZmZk9wGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:32:30.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Proposal.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Proposal.cs",
               "RelativeDocumentMoniker": "Models\\Proposal.cs",
@@ -206,28 +344,23 @@
               "RelativeToolTip": "Models\\Proposal.cs",
               "ViewState": "AQIAAAAAAABAZmZmZmYkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:32:09.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2024-04-30T17:32:09.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "JobRepository.cs",
+              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\JobRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\JobRepository.cs",
+              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\JobRepository.cs",
+              "RelativeToolTip": "Repository\\JobRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T18:02:01.264Z"
+              "WhenOpened": "2024-04-30T17:22:15.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -239,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Job.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Job.cs",
               "RelativeDocumentMoniker": "Models\\Job.cs",
@@ -251,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "JobDTO.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\DTO\\JobDTO.cs",
               "RelativeDocumentMoniker": "DTO\\JobDTO.cs",
@@ -263,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "dbo.Clients [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/AppDatabase2/True/SqlTable/dbo.Clients.sql",
               "ToolTip": "dbo.Clients [Data]",
@@ -272,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "ClientRepository.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Repository\\ClientRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ClientRepository.cs",
@@ -284,19 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
-              "ViewState": "AQIAAAAAAACoZWZmZmYkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:32:12.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "dbo.Jobs [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/AppDatabase2/True/SqlTable/dbo.Jobs.sql",
               "ToolTip": "dbo.Jobs [Data]",
@@ -305,19 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-01T18:01:46.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "JobQuest.csproj",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\JobQuest.csproj",
               "RelativeDocumentMoniker": "JobQuest.csproj",
@@ -329,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "dbo.Clients [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/ApplicationDatabase/True/SqlTable/dbo.Clients.sql",
               "ToolTip": "dbo.Clients [Data]",
@@ -338,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "dbo.Jobs [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/OMAR/ApplicationDatabase/True/SqlTable/dbo.Jobs.sql",
               "ToolTip": "dbo.Jobs [Data]",
@@ -347,19 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Contract.cs",
-              "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
-              "RelativeDocumentMoniker": "Models\\Contract.cs",
-              "ToolTip": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Contract.cs",
-              "RelativeToolTip": "Models\\Contract.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:41:19.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Freelancer.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Freelancer.cs",
               "RelativeDocumentMoniker": "Models\\Freelancer.cs",
@@ -371,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Models\\Client.cs",
               "RelativeDocumentMoniker": "Models\\Client.cs",
@@ -383,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "PACKAGE.md",
               "DocumentMoniker": "C:\\Users\\MATRIXx\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\PACKAGE.md",
               "ToolTip": "C:\\Users\\MATRIXx\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\PACKAGE.md",
@@ -393,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "PlatformDbContext.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Data\\PlatformDbContext.cs",
               "RelativeDocumentMoniker": "Data\\PlatformDbContext.cs",
@@ -405,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ClientController.cs",
               "DocumentMoniker": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientController.cs",

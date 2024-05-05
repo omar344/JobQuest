@@ -24,6 +24,8 @@ namespace JobQuest
 			builder.Services.AddScoped<IClientRepository, ClientRepository>();
 			builder.Services.AddScoped<IJobRepository, JobRepository>();
 			builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
+			builder.Services.AddScoped<IContractRepository, ContractRepository>();
+			builder.Services.AddScoped<IFreelancerRepository, FreelancerRepository>();
 			builder.Services.AddControllers();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();

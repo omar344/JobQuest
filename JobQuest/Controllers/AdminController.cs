@@ -7,5 +7,6 @@ namespace JobQuest.Controllers
 	[ApiController]
 	public class AdminController : ControllerBase
 	{
+		
 	}
 }

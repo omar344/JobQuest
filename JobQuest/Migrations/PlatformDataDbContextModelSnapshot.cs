@@ -66,14 +66,16 @@ namespace JobQuest.Migrations
             modelBuilder.Entity("JobQuest.Models.Contract", b =>
                 {
                     b.Property<int>("ContractID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContractID"));
 
                     b.Property<int>("ClientID")
                         .HasColumnType("int");
 
-                    b.Property<string>("ContractStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ContractStatus")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -205,13 +207,15 @@ namespace JobQuest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.HasKey("PaymentID");
 
                     b.HasIndex("ClientID");
+
+                    b.HasIndex("ContractID")
+                        .IsUnique();
 
                     b.ToTable("Payments");
                 });
@@ -282,12 +286,6 @@ namespace JobQuest.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("JobQuest.Models.Payment", "Payment")
-                        .WithOne("Contract")
-                        .HasForeignKey("JobQuest.Models.Contract", "ContractID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("JobQuest.Models.Freelancer", "Freelancer")
                         .WithMany("Contracts")
                         .HasForeignKey("FreelancerID")
@@ -297,8 +295,6 @@ namespace JobQuest.Migrations
                     b.Navigation("Client");
 
                     b.Navigation("Freelancer");
-
-                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Job", b =>
@@ -320,7 +316,15 @@ namespace JobQuest.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("JobQuest.Models.Contract", "Contract")
+                        .WithOne("Payment")
+                        .HasForeignKey("JobQuest.Models.Payment", "ContractID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Client");
+
+                    b.Navigation("Contract");
                 });
 
             modelBuilder.Entity("JobQuest.Models.Proposal", b =>
@@ -360,6 +364,12 @@ namespace JobQuest.Migrations
                     b.Navigation("Payments");
                 });
 
+            modelBuilder.Entity("JobQuest.Models.Contract", b =>
+                {
+                    b.Navigation("Payment")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("JobQuest.Models.Freelancer", b =>
                 {
                     b.Navigation("Contracts");
@@ -372,12 +382,6 @@ namespace JobQuest.Migrations
             modelBuilder.Entity("JobQuest.Models.Job", b =>
                 {
                     b.Navigation("Proposals");
-                });
-
-            modelBuilder.Entity("JobQuest.Models.Payment", b =>
-                {
-                    b.Navigation("Contract")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

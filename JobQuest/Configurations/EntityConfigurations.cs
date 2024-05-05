@@ -11,6 +11,9 @@ namespace JobQuest.Configurations
 		{
 			builder
 				.HasKey(c => c.ContractID);
+			builder
+				.Property(c => c.ContractID)
+				.ValueGeneratedOnAdd(); // Auto-generate ContractID on add
 
 			builder.HasOne(c => c.Freelancer)
 				.WithMany(f => f.Contracts)
@@ -25,6 +28,7 @@ namespace JobQuest.Configurations
 				.Property(p => p.ContractStatus)
 				.IsRequired();
 		}
+
 	}
 
 	public class ClientConfiguration : IEntityTypeConfiguration<Client>
@@ -88,29 +92,36 @@ namespace JobQuest.Configurations
 		{
 			builder
 				.HasKey(pt => pt.PaymentID);
+
 			builder
 				.HasOne(pt => pt.Contract)
-				.WithOne(p => p.Payment)
-				.HasForeignKey<Contract>(fk => fk.ContractID)
-				.IsRequired();
+				.WithOne(c => c.Payment)
+				.HasForeignKey<Payment>(pt => pt.ContractID)
+				.IsRequired(); // Ensure ContractID is required
+
 			builder
-				.HasOne(c => c.Client)
-				.WithMany(p => p.Payments)
-				.HasForeignKey(fk => fk.ClientID)
-				.IsRequired();
+				.HasOne(p => p.Client)
+				.WithMany(c => c.Payments)
+				.HasForeignKey(p => p.ClientID)
+				.IsRequired(); // Ensure ClientID is required
+
 			builder
 				.Property(p => p.PaymentType)
 				.IsRequired();
+
 			builder
 				.Property(p => p.Status)
 				.IsRequired();
+
 			builder
 				.Property(p => p.Amount)
 				.IsRequired();
+
 			builder
 				.Property(p => p.Date)
 				.IsRequired();
 		}
+
 	}
 
 	public class ProposalConfigurations : IEntityTypeConfiguration<Proposal>
