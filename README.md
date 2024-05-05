@@ -1,35 +1,52 @@
-# JobQuest
+<h1>JobQuest</h1>
 
-<h2><strong>Introducing JobQuest:</strong></h2>
-<p>Your go-to platform for freelancing opportunities. <em>JobQuest</em> simplifies the process of connecting clients with freelancers for project collaboration. Whether you're a client seeking skilled professionals or a freelancer looking for exciting projects, <em>JobQuest</em> has got you covered. With features like user registration, authentication, and profile management, <em>JobQuest</em> ensures a seamless experience for both clients and freelancers. Post, update, and manage job listings effortlessly, while handling proposals, contracts, and project dashboards with ease. <em>JobQuest</em> streamlines the freelancing experience, making it easier than ever to find the perfect match for your project needs.</p>
+<p>JobQuest is a platform that connects freelancers with clients to collaborate on various job opportunities. This repository contains the backend API for JobQuest.</p>
 
-<h2>Key Features:</h2>
+<h2>Features</h2>
+
 <ul>
-  <li><strong>User Registration and Authentication:</strong> Clients and freelancers can register on the platform and securely authenticate themselves to access their accounts.</li>
-  <li><strong>Client Profile Management:</strong> Clients can complete and update their profiles with relevant information about their business and project requirements.</li>
-  <li><strong>Job Management:</strong> Clients can post, update, and delete job listings, and search for freelancers based on specific criteria. Additionally, they can filter job listings based on freelancer attributes.</li>
-  <li><strong>Proposal Handling:</strong> Freelancers can submit proposals for jobs posted by clients, and clients can view and evaluate these proposals. Clients have the option to select a proposal and proceed to create a contract with the chosen freelancer.</li>
-  <li><strong>Contract Management:</strong> The system facilitates the creation and management of contracts between clients and freelancers. Clients and freelancers can view their active contracts on their respective profiles.</li>
-  <li><strong>Dashboard Insights:</strong> The dashboard provides valuable insights such as the number of freelancers, clients, contracts, and jobs. It also calculates the average number of proposals received for each job and tracks the amount of money paid by clients each week.</li>
+  <li><strong>Users:</strong> Manage clients and freelancers.</li>
+  <li><strong>Jobs:</strong> Create, update, and delete job listings.</li>
+  <li><strong>Contracts:</strong> Manage contracts between clients and freelancers.</li>
+  <li><strong>Proposals:</strong> Submit proposals for job listings.</li>
+  <li><strong>Skills:</strong> Add and remove skills for freelancers.</li>
 </ul>
 
-<h2>Architecture:</h2>
-<p>The application follows a clean architecture approach, which emphasizes separation of concerns and maintainability. It is structured into layers including Presentation Layer (Controllers), Application Layer (Services), Domain Layer (Entities and Business Logic), and Data Layer (Repositories and Data Access Logic). Dependency Injection is utilized for managing dependencies, and unit tests are implemented to ensure the reliability of the system.</p>
+<h2>Technologies Used</h2>
 
-<h2>Technologies Used:</h2>
 <ul>
-  <li>ASP.NET Web API for building the backend RESTful API.</li>
-  <li>Entity Framework Core for data access and ORM.</li>
-  <li>C# programming language for server-side logic.</li>
-  <li>Dependency Injection for managing dependencies.</li>
-<!--  <li>NUnit/MSTest for unit testing.</li>!-->
-  <li>GitHub for version control and collaboration.</li>
+  <li><strong>ASP.NET Core:</strong> Backend framework for building the API.</li>
+  <li><strong>Entity Framework Core:</strong> Object-relational mapping (ORM) framework for working with databases.</li>
+  <li><strong>Swagger:</strong> API documentation tool.</li>
+  <li><strong>GitHub Actions:</strong> Continuous integration and deployment (CI/CD) pipeline.</li>
 </ul>
 
-<!--<h2>Getting Started: soon!</h2>
-<!-- <p>To get started with the project, follow the instructions provided in the README.md file in the project repository. The README includes guidelines for setting up the development environment, running the application locally, and contributing to the project.</p> -->
+<h2>Installation</h2>
 
-<!-- <h2>Contact:</h2>
-<p>For any inquiries or feedback regarding the project, feel free to contact us via email at <a href="">contact@example.com</a>. We value your input and look forward to hearing from you!</p>
+<ol>
+  <li>Clone the repository:</li>
+  <pre><code>git clone https://github.com/your-username/JobQuest.git</code></pre>
+  
+  <li>Navigate to the project directory:</li>
+  <pre><code>cd JobQuest</code></pre>
+  
+  <li>Install dependencies:</li>
+  <pre><code>dotnet restore</code></pre>
+  
+  <li>Set up the database:</li>
+  <ul>
+    <li>Update the connection string in <strong>appsettings.json</strong>.</li>
+    <li>Run EF migrations:</li>
+    <pre><code>dotnet ef database update</code></pre>
+  </ul>
+  
+  <li>Run the application:</li>
+  <pre><code>dotnet run</code></pre>
+  
+  <li>Access the API documentation:</li>
+  <p>Navigate to <strong>https://localhost:5001/swagger</strong> in your web browser.</p>
+</ol>
 
-<p>Thank you for your interest in our project. We hope you find it useful and engaging!</p> -->
+<h2>Contributing</h2>
+
+<p>Contributions are welcome! If you have any ideas, enhancements, or bug fixes, please open an issue or create a pull request.</p>
