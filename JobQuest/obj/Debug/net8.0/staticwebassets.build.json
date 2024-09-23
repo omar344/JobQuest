@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "e1SBwPuxQT+/SQjrkLoLKyRY25a/cX+Mdk73XY9G99E=",
+  "Hash": "buhr7SJcgCBACJr6+A4YdKY5CLYvHhCDTej6AMikfRY=",
   "Source": "JobQuest",
   "BasePath": "_content/JobQuest",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JobQuest\\wwwroot",
+      "Source": "JobQuest",
+      "ContentRoot": "D:\\FreelancingPlatform\\JobQuest\\JobQuest\\wwwroot\\",
+      "BasePath": "_content/JobQuest",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

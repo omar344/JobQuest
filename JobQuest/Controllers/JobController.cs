@@ -2,6 +2,7 @@
 using JobQuest.Interface;
 using JobQuest.Models;
 using JobQuest.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +13,10 @@ namespace JobQuest.Controllers
 	public class JobController(IJobRepository jobRepo) : ControllerBase
 	{
 		[HttpGet("{Id:int}", Name = "GetOneJobRoute")]
-		public async Task<IActionResult> GetById(int id)
+		[Authorize]
+		public async Task<IActionResult> GetById(int Id)
 		{
-			Job? job = await jobRepo.GetByIdAsync(id);
+			Job? job = await jobRepo.GetByIdAsync(Id);
 			if (job == null)
 			{
 				return NotFound();

@@ -1,10 +1,11 @@
 ﻿using JobQuest.Configurations;
 using JobQuest.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Data
 {
-	public class PlatformDataDbContext : DbContext
+	public class PlatformDataDbContext : IdentityDbContext<ApplicationUser>
     {
         public PlatformDataDbContext()
         {
@@ -22,7 +23,8 @@ namespace JobQuest.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			new FreelancerConfigurations().Configure(modelBuilder.Entity<Freelancer>());
+            base.OnModelCreating(modelBuilder);
+            new FreelancerConfigurations().Configure(modelBuilder.Entity<Freelancer>());
 			new ClientConfiguration().Configure(modelBuilder.Entity<Client>());
 			new JobConfigurations().Configure(modelBuilder.Entity<Job>());
 			new PaymentConfigurations().Configure(modelBuilder.Entity<Payment>());

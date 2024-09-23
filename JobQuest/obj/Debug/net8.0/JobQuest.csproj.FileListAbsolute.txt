@@ -142,3 +142,4 @@ D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.AspNetCore.I
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.staticwebassets.runtime.json
