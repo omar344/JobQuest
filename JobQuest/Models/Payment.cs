@@ -11,7 +11,7 @@ namespace JobQuest.Models
 		public DateTime Date { get; set; }
 		public PaymentStatus Status { get; set; }
 		public decimal Amount { get; set; }
-		public int ClientID { get; set; }
+		public string ClientID { get; set; }
 		public virtual Client Client { get; set; }
 		public int ContractID { get; set; }
 		public virtual Contract Contract { get; set; }

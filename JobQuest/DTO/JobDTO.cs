@@ -6,7 +6,7 @@ namespace JobQuest.DTO
 	public class JobDTO
 	{
 		[Required]
-		public int ClientID { get; set; }
+		public string ClientID { get; set; }
 		[Required]
 		public string JobTitle { get; set; }
 		public string JobDescription { get; set; }

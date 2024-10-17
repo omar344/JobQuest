@@ -11,9 +11,9 @@ namespace JobQuest.Models
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
 		public ContractStatus ContractStatus { get; set; }
-		public int FreelancerID { get; set; }
+		public string FreelancerID { get; set; }
 		public virtual Freelancer Freelancer { get; set; }
-		public int ClientID { get; set; }
+		public string ClientID { get; set; }
 		public virtual Client Client { get; set; }
 		public virtual Payment Payment { get; set; }
 		

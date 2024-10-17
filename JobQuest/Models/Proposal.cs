@@ -15,7 +15,7 @@ namespace JobQuest.Models
 		public DateTime SubmittedAt { get; set; }
 		public int JobID { get; set; }
 		public virtual Job AssociatedJob { get; set; }
-		public int FreelancerID { get; set; }
+		public string FreelancerID { get; set; }
 		public virtual Freelancer Freelancer { get; set; }
 	}
 

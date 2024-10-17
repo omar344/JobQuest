@@ -1,12 +1,10 @@
-﻿using JobQuest.DTO;
-using JobQuest.Models;
+﻿using JobQuest.Models;
 
-namespace JobQuest.Interface
+public interface IClientRepository
 {
-    public interface IClientRepository
-    {
-        void Add(ClientDTO clientDto);
-        Client GetById(int id);
-        void Edit(int id, ClientDTO client);
-    }
+    Task<Client> GetByIdAsync(string applicationUserId);
+    Task<IEnumerable<Client>> GetAllAsync();
+    Task AddAsync(Client client);
+    Task UpdateAsync(Client client);
+    Task DeleteAsync(string applicationUserId);
 }

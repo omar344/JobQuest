@@ -1,11 +1,60 @@
-﻿using JobQuest.Models;
+﻿using JobQuest.Authorization;
+using JobQuest.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Reflection.Emit;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace JobQuest.Configurations
 {
-	public class ContractConfigurations : IEntityTypeConfiguration<Contract>
+    public class RolePermissionConfigurations : IEntityTypeConfiguration<RolePermission>
+    {
+        public void Configure(EntityTypeBuilder<RolePermission> builder)
+        {
+            builder
+            .HasKey(rp => new { rp.RoleId, rp.PermissionId });
+
+        }
+    }
+    public class UserPermissionConfigurations : IEntityTypeConfiguration<UserPermission>
+    {
+        public void Configure(EntityTypeBuilder<UserPermission> builder)
+        {
+            builder
+             .HasKey(up => new { up.UserId, up.PermissionId });
+
+        }
+    }
+
+    public class ApplicationUserConfigurations : IEntityTypeConfiguration<ApplicationUser>
+	{
+        public void Configure(EntityTypeBuilder<ApplicationUser> builder)
+        {
+			builder
+                .HasOne(a => a.Client)
+                .WithOne(c => c.ApplicationUser)
+                .HasForeignKey<Client>(c => c.ApplicationUserId);
+			builder
+                 .HasOne(a => a.Freelancer)
+                .WithOne(f => f.ApplicationUser)
+                .HasForeignKey<Freelancer>(f => f.ApplicationUserId);
+            builder
+				 .HasOne(a => a.Admin)
+				.WithOne(f => f.ApplicationUser)
+				.HasForeignKey<Freelancer>(f => f.ApplicationUserId);
+        }
+    }
+
+    public class AdminConfigurations : IEntityTypeConfiguration<Admin>
+    {
+        public void Configure(EntityTypeBuilder<Admin> builder)
+        {
+            builder
+                .HasKey(key => key.ApplicationUserId);
+        }
+    }
+
+    public class ContractConfigurations : IEntityTypeConfiguration<Contract>
 	{
 		public void Configure(EntityTypeBuilder<Contract> builder)
 		{
@@ -36,16 +85,17 @@ namespace JobQuest.Configurations
 		public void Configure(EntityTypeBuilder<Client> builder)
 		{
 			builder
-				.HasKey(key => key.Id);
-		}
-	}
+				.HasKey(key => key.ApplicationUserId);
+			
+        }
+    }
 
 	public class FreelancerConfigurations : IEntityTypeConfiguration<Freelancer>
 	{
 		public void Configure(EntityTypeBuilder<Freelancer> builder)
 		{
 			builder 
-				.HasKey(key => key.Id);
+				.HasKey(key => key.ApplicationUserId);
 			builder
 				.Property(s => s.Specialization)
 				.IsRequired();
@@ -53,8 +103,7 @@ namespace JobQuest.Configurations
 				.Property(h => h.HourlyRate)
 				.IsRequired();
 			builder
-				.Property(e => e.Experience)
-				.IsRequired();
+				.Property(e => e.Experience);
 		}
 	}
 

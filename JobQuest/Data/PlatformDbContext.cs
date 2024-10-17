@@ -1,4 +1,5 @@
-﻿using JobQuest.Configurations;
+﻿using JobQuest.Authorization;
+using JobQuest.Configurations;
 using JobQuest.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,9 @@ namespace JobQuest.Data
 
         }
 		public PlatformDataDbContext(DbContextOptions<PlatformDataDbContext> options) : base(options) { }
-
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<RolePermission> RolePermissions { get; set; }
+        public DbSet<UserPermission> UserPermissions { get; set; }
         public DbSet<Freelancer> Freelancers { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Job?> Jobs { get; set; }

@@ -6,37 +6,61 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+using JobQuest.Data;
+using JobQuest.Interface;
+using JobQuest.Authorization;
 
 namespace JobQuest.Controllers
 {
-    public class AccountController : Controller
+    [ApiController] // Add this attribute to your controller
+    [Route("api/[controller]")]
+    public class AccountController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IConfiguration config;
+        private readonly PlatformDataDbContext dbContext;
+        private readonly IClientRepository ClientRepo;
+        private readonly PermissionService _permissionService;
 
-        public AccountController(UserManager<ApplicationUser> UserManager,IConfiguration config)
+        // Correct constructor syntax
+        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration config,
+            PlatformDataDbContext dbContext, IClientRepository clientRepo, PermissionService permissionService)
         {
-            userManager = UserManager;
+            this.userManager = userManager;
             this.config = config;
+            this.dbContext = dbContext;
+            this.ClientRepo = clientRepo; // Assign the injected repository
+            _permissionService = permissionService;
         }
 
         [HttpPost("Register")] // POST api/Account/Register
-        public async Task<IActionResult> Register(RegisterDto UserFormRequest)
+        public async Task<IActionResult> Register(UserRegistrationDTO registrationDTO)
         {
             if (ModelState.IsValid)
             {
                 // Save in the database
-                ApplicationUser user = new()
+                var user = new ApplicationUser
                 {
-                    UserName = UserFormRequest.UserName,
-                    Email = UserFormRequest.Email
+                    UserName = registrationDTO.UserName,
+                    Email = registrationDTO.Email,
+                    FullName = registrationDTO.FullName,
+                    Address = registrationDTO.Address,
+                    DateOfBirth = registrationDTO.DateOfBirth
                 };
 
-                IdentityResult result = await userManager.CreateAsync(user, UserFormRequest.Password);
+                IdentityResult result = await userManager.CreateAsync(user, registrationDTO.Password);
 
                 if (result.Succeeded)
                 {
-                    return Ok("User created successfully.");
+                    if (registrationDTO.UserType == UserType.Client)
+                    {
+                        // Assign permissions for Client type
+                        await _permissionService.AssignPermissionsToUser(user, new List<string> { "CanViewJobs" });
+
+                        return Ok("User registered and permissions assigned successfully.");
+                    }
+                    return BadRequest("Unsupported user type");
                 }
 
                 // Handle errors from IdentityResult
@@ -64,29 +88,29 @@ namespace JobQuest.Controllers
 
                     if (found)
                     {
-                        // Generate the JWT token
-                        List<Claim> userClaims = new()
+                        // Generate the JWT token with roles and permissions
+                        var userClaims = new List<Claim>
                         {
                             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                             new Claim(ClaimTypes.NameIdentifier, userFromDb.Id),
                             new Claim(ClaimTypes.Name, userFromDb.UserName)
                         };
 
-                        // Add roles as claims
-                        var userRoles = await userManager.GetRolesAsync(userFromDb);
-                        foreach (var roleName in userRoles)
+                        // Retrieve permissions for the user
+                        var userPermissions = await GetUserPermissionsAsync(userFromDb);
+                        foreach (var permission in userPermissions)
                         {
-                            userClaims.Add(new Claim(ClaimTypes.Role, roleName));
+                            userClaims.Add(new Claim("Permission", permission));
                         }
 
                         // Create the security key and credentials
-                        var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT: SecritKey"]));
+                        var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SecretKey"]));
                         var signingCred = new SigningCredentials(signInKey, SecurityAlgorithms.HmacSha256);
 
                         // Create the token
                         JwtSecurityToken myToken = new(
-                            issuer: config["JWT: IssuerIP"],
-                            audience: config["JWT: AudienceIP"],
+                            issuer: config["JWT:IssuerIP"],
+                            audience: config["JWT:AudienceIP"],
                             expires: DateTime.Now.AddHours(1),
                             claims: userClaims,
                             signingCredentials: signingCred
@@ -114,6 +138,34 @@ namespace JobQuest.Controllers
 
             // If the model state is invalid, return bad request
             return BadRequest(ModelState);
+        }
+
+        // Helper method to retrieve user permissions from the database
+        private async Task<List<string>> GetUserPermissionsAsync(ApplicationUser user)
+        {
+            var permissions = new List<string>();
+
+            // Get permissions from roles
+            var userRoles = await userManager.GetRolesAsync(user);
+            foreach (var role in userRoles)
+            {
+                var rolePermissions = await dbContext.RolePermissions
+                    .Where(rp => rp.Role.Name == role)
+                    .Select(rp => rp.Permission.Name)
+                    .ToListAsync();
+
+                permissions.AddRange(rolePermissions);
+            }
+
+            // Get direct user permissions
+            var userPermissions = await dbContext.UserPermissions
+                .Where(up => up.UserId == user.Id)
+                .Select(up => up.Permission.Name)
+                .ToListAsync();
+
+            permissions.AddRange(userPermissions);
+
+            return permissions.Distinct().ToList(); // Remove duplicates
         }
     }
 }

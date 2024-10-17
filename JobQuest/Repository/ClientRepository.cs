@@ -1,45 +1,51 @@
-﻿using JobQuest.Data;
-using JobQuest.DTO;
-using JobQuest.Interface;
+﻿using JobQuest.Data; // Adjust the namespace as necessary
 using JobQuest.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace JobQuest.Repository
+public class ClientRepository : IClientRepository
 {
-    public class ClientRepository(PlatformDataDbContext context)  : IClientRepository
-	{
-		public void Add(ClientDTO clientDto)
-		{
-			var client = new Client
-			{
-				FirstName = clientDto.FirstName,
-				LastName = clientDto.LastName,
-				Email = clientDto.Email,
-				Country = clientDto.Country,
-				Phone = clientDto.Phone,
-				Username = "OMar321",
-				Password = "*****************"
-			};
+    private readonly PlatformDataDbContext _context;
 
-			context.Clients.Add(client);
-			context.SaveChanges();
+    public ClientRepository(PlatformDataDbContext context)
+    {
+        _context = context;
+    }
 
-		}
-		public Client GetById(int id)
-		{
-			return context.Clients.SingleOrDefault(d => d.Id == id);
-		}
-		public void Edit(int id, ClientDTO client)
-		{
-			Client old = GetById(id);
-			old.FirstName = client.FirstName;
-			old.LastName = client.LastName;
-			old.Email = client.Email;
-			old.Country = client.Country;
-			old.Phone = client.Phone;
-			context.SaveChanges();
+    public async Task<Client> GetByIdAsync(string applicationUserId)
+    {
+        return await _context.Clients
+            .Include(c => c.ApplicationUser) // Include related ApplicationUser if needed
+            .FirstOrDefaultAsync(c => c.ApplicationUserId == applicationUserId);
+    }
 
-		}
+    public async Task<IEnumerable<Client>> GetAllAsync()
+    {
+        return await _context.Clients
+            .Include(c => c.ApplicationUser) // Include related ApplicationUser if needed
+            .ToListAsync();
+    }
 
-	}
+    public async Task AddAsync(Client client)
+    {
+        await _context.Clients.AddAsync(client);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task UpdateAsync(Client client)
+    {
+        _context.Clients.Update(client);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(string applicationUserId)
+    {
+        var client = await GetByIdAsync(applicationUserId);
+        if (client != null)
+        {
+            _context.Clients.Remove(client);
+            await _context.SaveChangesAsync();
+        }
+    }
 }

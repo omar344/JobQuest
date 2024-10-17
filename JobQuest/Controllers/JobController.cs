@@ -12,14 +12,15 @@ namespace JobQuest.Controllers
 	[ApiController]
 	public class JobController(IJobRepository jobRepo) : ControllerBase
 	{
-		[HttpGet("{Id:int}", Name = "GetOneJobRoute")]
-		[Authorize]
-		public async Task<IActionResult> GetById(int Id)
+		
+        [Authorize(Policy = "CanViewJobs")]
+        [HttpGet("{Id:int}", Name = "GetOneJobRoute")]
+        public async Task<IActionResult> GetById(int Id)
 		{
 			Job? job = await jobRepo.GetByIdAsync(Id);
 			if (job == null)
 			{
-				return NotFound();
+				return Ok(" Done, Success ");
 			}
 			return Ok(job);
 		}

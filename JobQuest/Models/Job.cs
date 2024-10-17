@@ -13,7 +13,7 @@ namespace JobQuest.Models
 		public decimal JobBudget { get; set; }
 		public JobCategoryEnum JobCategory { get; set; }
 		public string JobTimeline { get; set; }
-		public int ClientID { get; set; }
+		public string ClientID { get; set; }
 		public virtual Client Client { get; set; }
 		public virtual ICollection<Proposal> Proposals { get; set; }
 	}

@@ -6,7 +6,7 @@ namespace JobQuest.Models
 	{
 		public int SkillID { get; set; }
 		public string Name { get; set; }
-		public int FreelancerID { get; set; }
+		public string FreelancerID { get; set; }
 		public virtual Freelancer Freelancer { get; set; }
 	}
 }
