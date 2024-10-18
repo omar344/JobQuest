@@ -1,5 +1,4 @@
-﻿using JobQuest.Authorization;
-using JobQuest.Configurations;
+﻿using JobQuest.Configurations;
 using JobQuest.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +12,7 @@ namespace JobQuest.Data
 
         }
 		public PlatformDataDbContext(DbContextOptions<PlatformDataDbContext> options) : base(options) { }
-        public DbSet<Permission> Permissions { get; set; }
-        public DbSet<RolePermission> RolePermissions { get; set; }
-        public DbSet<UserPermission> UserPermissions { get; set; }
+        public DbSet<Admin>Admins { get; set; }
         public DbSet<Freelancer> Freelancers { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Job?> Jobs { get; set; }
@@ -27,6 +24,7 @@ namespace JobQuest.Data
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
             base.OnModelCreating(modelBuilder);
+            new AdminConfigurations().Configure(modelBuilder.Entity<Admin>());
             new FreelancerConfigurations().Configure(modelBuilder.Entity<Freelancer>());
 			new ClientConfiguration().Configure(modelBuilder.Entity<Client>());
 			new JobConfigurations().Configure(modelBuilder.Entity<Job>());

@@ -1,4 +1,4 @@
-﻿using JobQuest.Authorization;
+﻿
 using JobQuest.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -7,24 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace JobQuest.Configurations
 {
-    public class RolePermissionConfigurations : IEntityTypeConfiguration<RolePermission>
-    {
-        public void Configure(EntityTypeBuilder<RolePermission> builder)
-        {
-            builder
-            .HasKey(rp => new { rp.RoleId, rp.PermissionId });
 
-        }
-    }
-    public class UserPermissionConfigurations : IEntityTypeConfiguration<UserPermission>
-    {
-        public void Configure(EntityTypeBuilder<UserPermission> builder)
-        {
-            builder
-             .HasKey(up => new { up.UserId, up.PermissionId });
-
-        }
-    }
 
     public class ApplicationUserConfigurations : IEntityTypeConfiguration<ApplicationUser>
 	{

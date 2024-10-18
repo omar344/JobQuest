@@ -9,11 +9,10 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using JobQuest.Data;
 using JobQuest.Interface;
-using JobQuest.Authorization;
 
 namespace JobQuest.Controllers
 {
-    [ApiController] // Add this attribute to your controller
+    [ApiController]
     [Route("api/[controller]")]
     public class AccountController : ControllerBase
     {
@@ -21,20 +20,21 @@ namespace JobQuest.Controllers
         private readonly IConfiguration config;
         private readonly PlatformDataDbContext dbContext;
         private readonly IClientRepository ClientRepo;
-        private readonly PermissionService _permissionService;
+        private readonly RoleManager<IdentityRole> roleManager;
 
-        // Correct constructor syntax
+        // Constructor
         public AccountController(UserManager<ApplicationUser> userManager, IConfiguration config,
-            PlatformDataDbContext dbContext, IClientRepository clientRepo, PermissionService permissionService)
+            PlatformDataDbContext dbContext, IClientRepository clientRepo, RoleManager<IdentityRole> roleManager)
         {
             this.userManager = userManager;
             this.config = config;
             this.dbContext = dbContext;
-            this.ClientRepo = clientRepo; // Assign the injected repository
-            _permissionService = permissionService;
+            this.ClientRepo = clientRepo;
+            this.roleManager = roleManager;
         }
 
-        [HttpPost("Register")] // POST api/Account/Register
+        // Register method
+        [HttpPost("Register")]
         public async Task<IActionResult> Register(UserRegistrationDTO registrationDTO)
         {
             if (ModelState.IsValid)
@@ -53,17 +53,9 @@ namespace JobQuest.Controllers
 
                 if (result.Succeeded)
                 {
-                    if (registrationDTO.UserType == UserType.Client)
-                    {
-                        // Assign permissions for Client type
-                        await _permissionService.AssignPermissionsToUser(user, new List<string> { "CanViewJobs" });
 
-                        return Ok("User registered and permissions assigned successfully.");
-                    }
-                    return BadRequest("Unsupported user type");
+                    return Ok("User registered successfully.");
                 }
-
-                // Handle errors from IdentityResult
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
@@ -73,22 +65,21 @@ namespace JobQuest.Controllers
             return BadRequest(ModelState);
         }
 
-        [HttpPost("Login")] // POST api/Account/Login
+        // Login method
+        [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginDto userFromRequest)
         {
             if (ModelState.IsValid)
             {
-                // Check if the user exists
                 ApplicationUser userFromDb = await userManager.FindByNameAsync(userFromRequest.UserName);
 
                 if (userFromDb != null)
                 {
-                    // Verify the password
                     bool found = await userManager.CheckPasswordAsync(userFromDb, userFromRequest.Password);
 
                     if (found)
                     {
-                        // Generate the JWT token with roles and permissions
+                        var userRoles = await userManager.GetRolesAsync(userFromDb);
                         var userClaims = new List<Claim>
                         {
                             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
@@ -96,18 +87,12 @@ namespace JobQuest.Controllers
                             new Claim(ClaimTypes.Name, userFromDb.UserName)
                         };
 
-                        // Retrieve permissions for the user
-                        var userPermissions = await GetUserPermissionsAsync(userFromDb);
-                        foreach (var permission in userPermissions)
-                        {
-                            userClaims.Add(new Claim("Permission", permission));
-                        }
+                        // Add roles to claims
+                        userClaims.AddRange(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
 
-                        // Create the security key and credentials
                         var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SecretKey"]));
                         var signingCred = new SigningCredentials(signInKey, SecurityAlgorithms.HmacSha256);
 
-                        // Create the token
                         JwtSecurityToken myToken = new(
                             issuer: config["JWT:IssuerIP"],
                             audience: config["JWT:AudienceIP"],
@@ -116,7 +101,6 @@ namespace JobQuest.Controllers
                             signingCredentials: signingCred
                         );
 
-                        // Return the token and expiration time
                         return Ok(new
                         {
                             token = new JwtSecurityTokenHandler().WriteToken(myToken),
@@ -125,47 +109,52 @@ namespace JobQuest.Controllers
                     }
                     else
                     {
-                        // Password is incorrect
                         return Unauthorized("Invalid password.");
                     }
                 }
                 else
                 {
-                    // User not found
                     return Unauthorized("User not found.");
                 }
             }
 
-            // If the model state is invalid, return bad request
             return BadRequest(ModelState);
         }
 
-        // Helper method to retrieve user permissions from the database
-        private async Task<List<string>> GetUserPermissionsAsync(ApplicationUser user)
+        // Add Role method
+        [HttpPost("add-role")]
+        public async Task<IActionResult> AddRole([FromBody] string role)
         {
-            var permissions = new List<string>();
-
-            // Get permissions from roles
-            var userRoles = await userManager.GetRolesAsync(user);
-            foreach (var role in userRoles)
+            if (!await roleManager.RoleExistsAsync(role))
             {
-                var rolePermissions = await dbContext.RolePermissions
-                    .Where(rp => rp.Role.Name == role)
-                    .Select(rp => rp.Permission.Name)
-                    .ToListAsync();
+                var result = await roleManager.CreateAsync(new IdentityRole(role));
+                if (result.Succeeded)
+                {
+                    return Ok(new { message = "Role Added Successfully" });
+                }
+                return BadRequest(result.Errors);
+            }
+            return BadRequest("Role already Exists");
+        }
 
-                permissions.AddRange(rolePermissions);
+        // Assign Role method
+        [HttpPost("assign-role")]
+        public async Task<IActionResult> AssignRole([FromBody] UserRole model)
+        {
+            var user = await userManager.FindByNameAsync(model.Username);
+
+            if (user == null)
+            {
+                return BadRequest("User not found");
             }
 
-            // Get direct user permissions
-            var userPermissions = await dbContext.UserPermissions
-                .Where(up => up.UserId == user.Id)
-                .Select(up => up.Permission.Name)
-                .ToListAsync();
+            var result = await userManager.AddToRoleAsync(user, model.Role);
+            if (result.Succeeded)
+            {
+                return Ok(new { message = "Role assigned successfully" });
+            }
 
-            permissions.AddRange(userPermissions);
-
-            return permissions.Distinct().ToList(); // Remove duplicates
+            return BadRequest(result.Errors);
         }
     }
 }

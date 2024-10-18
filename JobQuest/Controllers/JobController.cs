@@ -13,7 +13,7 @@ namespace JobQuest.Controllers
 	public class JobController(IJobRepository jobRepo) : ControllerBase
 	{
 		
-        [Authorize(Policy = "CanViewJobs")]
+        [Authorize("Client")]
         [HttpGet("{Id:int}", Name = "GetOneJobRoute")]
         public async Task<IActionResult> GetById(int Id)
 		{

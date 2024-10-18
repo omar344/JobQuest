@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
-using JobQuest.Authorization;
 
 namespace JobQuest
 {
@@ -19,14 +18,17 @@ namespace JobQuest
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Add DbContext for the platform data
             builder.Services.AddDbContext<PlatformDataDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"))
             );
 
+            // Configure Identity for ApplicationUser and Roles
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<PlatformDataDbContext>()
                 .AddDefaultTokenProviders();
 
+            // Configure JWT Authentication
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -37,6 +39,7 @@ namespace JobQuest
             {
                 options.SaveToken = true;
                 options.RequireHttpsMetadata = false;
+
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
@@ -45,11 +48,12 @@ namespace JobQuest
                     ValidAudience = builder.Configuration["JWT:AudienceIP"],
                     ValidateLifetime = true,
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(builder.Configuration["JWT:SecretKey"])),
+                    Encoding.UTF8.GetBytes(builder.Configuration["JWT:SecretKey"])),
                     ValidateIssuerSigningKey = true
                 };
             });
 
+            // Add CORS policy to allow any origin/method/header
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("MyPolicy", policy =>
@@ -58,31 +62,29 @@ namespace JobQuest
                 });
             });
 
+            // Add Authorization policies for role-based access control
+            builder.Services.AddAuthorization(options =>
+            {
+                // If you are using role-based authorization
+                options.AddPolicy("Client", policy => policy.RequireRole("Client"));
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("Freelancer", policy => policy.RequireRole("Freelancer"));
+            });
+
+            // Register repositories
             builder.Services.AddScoped<IJobRepository, JobRepository>();
             builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
             builder.Services.AddScoped<IClientRepository, ClientRepository>();
-            builder.Services.AddScoped<PermissionService>();
 
-            builder.Services.AddAuthorization(options =>
-            {
-                options.AddPolicy("CanManageJobs", policy =>
-                {
-                    policy.RequireClaim("Permission", "CanManageJobs");
-                });
-
-                options.AddPolicy("CanViewJobs", policy =>
-                {
-                    policy.RequireClaim("Permission", "CanViewJobs");
-                });
-            });
-
+            // Add Controllers and Swagger for API documentation
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
+            // Swagger configuration for development
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

@@ -143,3 +143,8 @@ D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.I
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.staticwebassets.runtime.json
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
