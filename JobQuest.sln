@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobQuest.Presentation", "JobQuest.Presentation\JobQuest.Presentation.csproj", "{634358F6-6642-4FDB-AC2F-E988E2BC6D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobQuest.Business", "JobQuest.Business\JobQuest.Business.csproj", "{C4C63560-173D-4AC3-8F99-F02FC84A2337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobQuest.User", "JobQuest.User\JobQuest.User.csproj", "{7722F6BE-47D6-4C21-846F-3A6E1048FB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobQuest.Data", "JobQuest.Data\JobQuest.Data.csproj", "{B16EE2CF-7D74-468E-AF42-6A8BBA880E28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{634358F6-6642-4FDB-AC2F-E988E2BC6D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634358F6-6642-4FDB-AC2F-E988E2BC6D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634358F6-6642-4FDB-AC2F-E988E2BC6D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634358F6-6642-4FDB-AC2F-E988E2BC6D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C63560-173D-4AC3-8F99-F02FC84A2337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C63560-173D-4AC3-8F99-F02FC84A2337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C63560-173D-4AC3-8F99-F02FC84A2337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C63560-173D-4AC3-8F99-F02FC84A2337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7722F6BE-47D6-4C21-846F-3A6E1048FB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7722F6BE-47D6-4C21-846F-3A6E1048FB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7722F6BE-47D6-4C21-846F-3A6E1048FB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7722F6BE-47D6-4C21-846F-3A6E1048FB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16EE2CF-7D74-468E-AF42-6A8BBA880E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16EE2CF-7D74-468E-AF42-6A8BBA880E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16EE2CF-7D74-468E-AF42-6A8BBA880E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16EE2CF-7D74-468E-AF42-6A8BBA880E28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
