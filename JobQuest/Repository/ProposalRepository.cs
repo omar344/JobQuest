@@ -11,11 +11,33 @@ public class ProposalRepository(PlatformDataDbContext context) : IProposalReposi
 {
     public async Task<Proposal?> GetByIdAsync(int id)
     {
-        return await context.Proposals.SingleOrDefaultAsync(d => d.ProposalID == id) ;
+        return await context.Proposals.SingleOrDefaultAsync(d => d.ProposalID == id);
     }
+
+    public async Task<List<Proposal>> GetAllAsync()
+    {
+        return await context.Proposals.Include(p => p.Freelancer).Include(p => p.AssociatedJob).ToListAsync();
+    }
+
+    public async Task<List<Proposal>> GetProposalsByJobIdAsync(int jobId)
+    {
+        return await context.Proposals
+            .Include(p => p.Freelancer)
+            .Where(p => p.JobID == jobId)
+            .ToListAsync();
+    }
+
+    public async Task<List<Proposal>> GetProposalsByFreelancerIdAsync(int freelancerId)
+    {
+        return await context.Proposals
+            .Include(p => p.AssociatedJob)
+            .Where(p => p.FreelancerID == freelancerId)
+            .ToListAsync();
+    }
+
     public async Task AddAsync(ProposalDTO proposalDto)
     {
-      var proposal = new Proposal
+        var proposal = new Proposal
         {
             ProposalText = proposalDto.ProposalText,
             BidAmount = proposalDto.BidAmount,
@@ -29,34 +51,34 @@ public class ProposalRepository(PlatformDataDbContext context) : IProposalReposi
         await context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync(int id,ProposalDTO proposalDto)
+    public async Task UpdateAsync(int id, ProposalDTO proposalDto)
     {
-          var postedProposal = await GetByIdAsync(id);
+        var postedProposal = await GetByIdAsync(id);
 
-          if (postedProposal != null)
-          {
-              postedProposal.ProposalText = proposalDto.ProposalText;
-              postedProposal.BidAmount = proposalDto.BidAmount;
-              postedProposal.JobID = proposalDto.JobID;
-              postedProposal.FreelancerID = proposalDto.FreelancerID;
-              postedProposal.SubmittedAt = proposalDto.SubmittedAt;
-              postedProposal.Status = proposalDto.Status;
+        if (postedProposal != null)
+        {
+            postedProposal.ProposalText = proposalDto.ProposalText;
+            postedProposal.BidAmount = proposalDto.BidAmount;
+            postedProposal.JobID = proposalDto.JobID;
+            postedProposal.FreelancerID = proposalDto.FreelancerID;
+            postedProposal.SubmittedAt = proposalDto.SubmittedAt;
+            postedProposal.Status = proposalDto.Status;
 
-              context.Proposals.Update(postedProposal);
-              await context.SaveChangesAsync();
-          }
+            context.Proposals.Update(postedProposal);
+            await context.SaveChangesAsync();
+        }
     }
 
     public async Task DeleteAsync(int id)
     {
-            var proposalToDelete = await GetByIdAsync(id);
+        var proposalToDelete = await GetByIdAsync(id);
 
-            if (proposalToDelete != null)
-            {
-                context.Proposals.Remove(proposalToDelete);
-                await context.SaveChangesAsync();
-            }
-        
+        if (proposalToDelete != null)
+        {
+            context.Proposals.Remove(proposalToDelete);
+            await context.SaveChangesAsync();
+        }
+
     }
-    
+
 }

@@ -7,7 +7,10 @@ namespace JobQuest.Interface;
 public interface IContractRepository
 {
     Task<Models.Contract?> GetById(int id);
-    Task AddAsync (ContractDTO contractDto);
+    Task<List<Models.Contract>> GetAllAsync();
+    Task<List<Models.Contract>> GetContractsByClientIdAsync(int clientId);
+    Task<List<Models.Contract>> GetContractsByFreelancerIdAsync(int freelancerId);
+    Task AddAsync(ContractDTO contractDto);
     Task UpdateAsync(int id, ContractDTO contractDto);
     Task DeleteAsync(int id);
 }

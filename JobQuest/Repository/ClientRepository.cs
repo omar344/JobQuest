@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Repository
 {
-    public class ClientRepository(PlatformDataDbContext context)  : IClientRepository
+	public class ClientRepository(PlatformDataDbContext context) : IClientRepository
 	{
 		public void Add(ClientDTO clientDto)
 		{
@@ -29,6 +29,12 @@ namespace JobQuest.Repository
 		{
 			return context.Clients.SingleOrDefault(d => d.Id == id);
 		}
+
+		public List<Client> GetAll()
+		{
+			return context.Clients.ToList();
+		}
+
 		public void Edit(int id, ClientDTO client)
 		{
 			Client old = GetById(id);

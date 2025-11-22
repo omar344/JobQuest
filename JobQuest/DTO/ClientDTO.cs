@@ -4,15 +4,21 @@ namespace JobQuest.DTO
 {
 	public class ClientDTO
 	{
-		[Required]
+		[Required(ErrorMessage = "First name is required")]
 		public string FirstName { get; set; }
-		[Required]
+
+		[Required(ErrorMessage = "Last name is required")]
 		public string LastName { get; set; }
-		[Required]
+
+		[Required(ErrorMessage = "Email is required")]
+		[EmailAddress(ErrorMessage = "Invalid email address")]
 		public string Email { get; set; }
-		[Required]
+
+		[Required(ErrorMessage = "Country is required")]
 		public string Country { get; set; }
-		[Required]
+
+		[Required(ErrorMessage = "Phone is required")]
+		[Phone(ErrorMessage = "Invalid phone number")]
 		public string Phone { get; set; }
 	}
 }

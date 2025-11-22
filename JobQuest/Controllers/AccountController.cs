@@ -9,14 +9,18 @@ using System.Text;
 
 namespace JobQuest.Controllers
 {
-    public class AccountController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AccountController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly RoleManager<IdentityRole> roleManager;
         private readonly IConfiguration config;
 
-        public AccountController(UserManager<ApplicationUser> UserManager,IConfiguration config)
+        public AccountController(UserManager<ApplicationUser> UserManager, RoleManager<IdentityRole> roleManager, IConfiguration config)
         {
             userManager = UserManager;
+            this.roleManager = roleManager;
             this.config = config;
         }
 
@@ -36,7 +40,18 @@ namespace JobQuest.Controllers
 
                 if (result.Succeeded)
                 {
-                    return Ok("User created successfully.");
+                    // Assign role based on user type (default to "Client" if not specified)
+                    string role = UserFormRequest.Role ?? "Client";
+
+                    // Ensure role exists
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole(role));
+                    }
+
+                    await userManager.AddToRoleAsync(user, role);
+
+                    return Ok(new { message = "User created successfully.", userId = user.Id, role = role });
                 }
 
                 // Handle errors from IdentityResult

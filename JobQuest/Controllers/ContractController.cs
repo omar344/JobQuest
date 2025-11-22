@@ -10,15 +10,36 @@ namespace JobQuest.Controllers;
 [ApiController]
 public class ContractController(IContractRepository contractRepo) : ControllerBase
 {
+	[HttpGet]
+	public async Task<IActionResult> GetAll()
+	{
+		var contracts = await contractRepo.GetAllAsync();
+		return Ok(contracts);
+	}
+
+	[HttpGet("client/{clientId:int}")]
+	public async Task<IActionResult> GetByClientId(int clientId)
+	{
+		var contracts = await contractRepo.GetContractsByClientIdAsync(clientId);
+		return Ok(contracts);
+	}
+
+	[HttpGet("freelancer/{freelancerId:int}")]
+	public async Task<IActionResult> GetByFreelancerId(int freelancerId)
+	{
+		var contracts = await contractRepo.GetContractsByFreelancerIdAsync(freelancerId);
+		return Ok(contracts);
+	}
+
 	[HttpGet("{id:int}")]
 	public async Task<ActionResult<ContractDTO>> GetContract(int id)
 	{
 		var contract = await contractRepo.GetById(id);
-		
+
 		return Ok(contract);
 	}
 	[HttpPost]
-	public async Task<IActionResult>Add(ContractDTO contractDto)
+	public async Task<IActionResult> Add(ContractDTO contractDto)
 	{
 		if (!ModelState.IsValid) return BadRequest(contractDto);
 		await contractRepo.AddAsync(contractDto);

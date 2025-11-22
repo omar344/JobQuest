@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JobQuest.Controllers
 {
-    [Route("api/[controller]")]
+	[Route("api/[controller]")]
 	[ApiController]
 	public class ClientController : ControllerBase
 	{
@@ -15,10 +15,29 @@ namespace JobQuest.Controllers
 		{
 			_clientRepo = clientRepo;
 		}
-		[HttpPut]
-     public IActionResult Add([FromBody] ClientDTO client)
+
+		[HttpGet]
+		public IActionResult GetAll()
 		{
-			if(ModelState.IsValid)
+			var clients = _clientRepo.GetAll();
+			return Ok(clients);
+		}
+
+		[HttpGet("{id:int}")]
+		public IActionResult GetById(int id)
+		{
+			var client = _clientRepo.GetById(id);
+			if (client == null)
+			{
+				return NotFound();
+			}
+			return Ok(client);
+		}
+
+		[HttpPost]
+		public IActionResult Add([FromBody] ClientDTO client)
+		{
+			if (ModelState.IsValid)
 			{
 				_clientRepo.Add(client);
 				return StatusCode(204, "Data Saved");

@@ -10,6 +10,27 @@ namespace JobQuest.Controllers;
 [ApiController]
 public class ProposalController(IProposalRepository proposalRepo) : ControllerBase
 {
+	[HttpGet]
+	public async Task<IActionResult> GetAll()
+	{
+		var proposals = await proposalRepo.GetAllAsync();
+		return Ok(proposals);
+	}
+
+	[HttpGet("job/{jobId:int}")]
+	public async Task<IActionResult> GetByJobId(int jobId)
+	{
+		var proposals = await proposalRepo.GetProposalsByJobIdAsync(jobId);
+		return Ok(proposals);
+	}
+
+	[HttpGet("freelancer/{freelancerId:int}")]
+	public async Task<IActionResult> GetByFreelancerId(int freelancerId)
+	{
+		var proposals = await proposalRepo.GetProposalsByFreelancerIdAsync(freelancerId);
+		return Ok(proposals);
+	}
+
 	[HttpGet("{id:int}")]
 	public async Task<IActionResult> GetById(int id)
 	{
@@ -39,5 +60,5 @@ public class ProposalController(IProposalRepository proposalRepo) : ControllerBa
 		await proposalRepo.UpdateAsync(id, proposalDto);
 		return Ok(proposalDto);
 	}
-		
+
 }

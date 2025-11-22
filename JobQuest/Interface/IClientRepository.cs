@@ -7,6 +7,7 @@ namespace JobQuest.Interface
     {
         void Add(ClientDTO clientDto);
         Client GetById(int id);
+        List<Client> GetAll();
         void Edit(int id, ClientDTO client);
     }
 }

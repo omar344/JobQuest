@@ -6,12 +6,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Repository;
 
-public class FreelancerRepository(PlatformDataDbContext context): IFreelancerRepository
+public class FreelancerRepository(PlatformDataDbContext context) : IFreelancerRepository
 {
    public async Task<Freelancer> GetAsync(int id)
    {
       return await context.Freelancers.FindAsync(id);
    }
+
+   public async Task<List<Freelancer>> GetAllAsync()
+   {
+      return await context.Freelancers.Include(f => f.FreelancerSkills).ToListAsync();
+   }
+
    public async Task AddAsync(FreelancerDTO freelancerDto)
    {
       var freelancer = new Freelancer
@@ -31,7 +37,7 @@ public class FreelancerRepository(PlatformDataDbContext context): IFreelancerRep
       context.Freelancers.Add(freelancer);
       await context.SaveChangesAsync();
    }
-   
+
    public async Task UpdateAsync(int id, FreelancerDTO freelancerDto)
    {
       var existingFreelancer = GetAsync(id).Result;
@@ -98,6 +104,6 @@ public class FreelancerRepository(PlatformDataDbContext context): IFreelancerRep
       }
    }
 
-   }
+}
 
 

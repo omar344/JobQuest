@@ -14,6 +14,24 @@ namespace JobQuest.Controllers
 		 -job  Search by freelancer
 		- jobs Filter by freelancer
 		*/
+		[HttpGet]
+		public async Task<IActionResult> GetAll()
+		{
+			var freelancers = await freelancerRepo.GetAllAsync();
+			return Ok(freelancers);
+		}
+
+		[HttpGet("{id:int}")]
+		public async Task<IActionResult> GetById(int id)
+		{
+			var freelancer = await freelancerRepo.GetAsync(id);
+			if (freelancer == null)
+			{
+				return NotFound();
+			}
+			return Ok(freelancer);
+		}
+
 		[HttpPost]
 		public async Task<IActionResult> Add(FreelancerDTO freelancerDto)
 		{
@@ -43,7 +61,7 @@ namespace JobQuest.Controllers
 			await freelancerRepo.DeleteAsync(id);
 			return NoContent();
 		}
-		
+
 		[HttpPost("{freelancerId:int}/skills")]
 		public async Task<IActionResult> AddSkill(int freelancerId, SkillDTO skill)
 		{

@@ -1,8 +1,13 @@
-﻿namespace JobQuest.DTO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace JobQuest.DTO
 {
     public class LoginDto
-    { 
-        public string UserName {  get; set; }
+    {
+        [Required(ErrorMessage = "Username is required")]
+        public string UserName { get; set; }
+
+        [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
     }
 }

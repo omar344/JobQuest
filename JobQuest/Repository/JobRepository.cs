@@ -6,13 +6,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JobQuest.Repository
 {
-    public class JobRepository(PlatformDataDbContext context):IJobRepository
-	{ 
+	public class JobRepository(PlatformDataDbContext context) : IJobRepository
+	{
 		public async Task<Job?> GetByIdAsync(int id)
 		{
-			return await context.Jobs.SingleOrDefaultAsync(d => d != null && d.JobID == id) ;
+			return await context.Jobs.SingleOrDefaultAsync(d => d != null && d.JobID == id);
 		}
 
+		public async Task<List<Job?>> GetAllAsync()
+		{
+			return await context.Jobs.ToListAsync();
+		}
 
 		public async Task AddAsync(JobDTO jobDto)
 		{
@@ -21,7 +25,7 @@ namespace JobQuest.Repository
 				ClientID = jobDto.ClientID,
 				JobTitle = jobDto.JobTitle,
 				JobDescription = jobDto.JobDescription,
-				JobCategory = jobDto.Category, 
+				JobCategory = jobDto.Category,
 				JobBudget = jobDto.JobBudget,
 				JobTimeline = jobDto.JobTimeline
 			};
@@ -38,7 +42,7 @@ namespace JobQuest.Repository
 				// Update properties
 				postedJob.JobTitle = jobDto.JobTitle;
 				postedJob.JobDescription = jobDto.JobDescription;
-				postedJob.JobCategory =jobDto.Category;
+				postedJob.JobCategory = jobDto.Category;
 				postedJob.JobBudget = jobDto.JobBudget;
 				postedJob.JobTimeline = jobDto.JobTimeline;
 
@@ -61,9 +65,9 @@ namespace JobQuest.Repository
 			return await context.Jobs.Where(j => j.JobCategory == category).ToListAsync();
 		}
 
-		public async Task<List<Job?>> GetJobByBudget(int budget,bool select)
+		public async Task<List<Job?>> GetJobByBudget(int budget, bool select)
 		{
-			if(select)
+			if (select)
 				return await context.Jobs.Where(j => j.JobBudget <= budget).ToListAsync();
 			else
 			{

@@ -1,145 +1,293 @@
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\appsettings.Development.json
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\appsettings.json
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.exe
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.deps.json
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.runtimeconfig.json
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.pdb
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.csproj.AssemblyReference.cache
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.GeneratedMSBuildEditorConfig.editorconfig
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.AssemblyInfoInputs.cache
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.AssemblyInfo.cs
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.csproj.CoreCompileInputs.cache
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.MvcApplicationPartsAssemblyInfo.cs
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.MvcApplicationPartsAssemblyInfo.cache
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.sourcelink.json
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets.build.json
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets.development.json
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets\msbuild.JobQuest.Microsoft.AspNetCore.StaticWebAssets.props
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets\msbuild.build.JobQuest.props
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.JobQuest.props
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.JobQuest.props
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\staticwebassets.pack.json
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\scopedcss\bundle\JobQuest.styles.css
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.csproj.Up2Date
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\refint\JobQuest.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.pdb
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\JobQuest.genruntimeconfig.cache
-D:\FreelancingPlatform\JobQuest\JobQuest\obj\Debug\net8.0\ref\JobQuest.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Azure.Core.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Azure.Identity.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Humanizer.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.CodeDom.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Memory.Data.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\FreelancingPlatform\JobQuest\JobQuest\bin\Debug\net8.0\JobQuest.staticwebassets.runtime.json
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/appsettings.Development.json
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/appsettings.json
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.exe
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.deps.json
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.runtimeconfig.json
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.pdb
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.OpenApi.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.AssemblyReference.cache
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.AssemblyInfoInputs.cache
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.AssemblyInfo.cs
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.CoreCompileInputs.cache
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.MvcApplicationPartsAssemblyInfo.cs
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.MvcApplicationPartsAssemblyInfo.cache
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.sourcelink.json
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.build.json
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.development.json
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.JobQuest.Microsoft.AspNetCore.StaticWebAssets.props
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.build.JobQuest.props
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.JobQuest.props
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.JobQuest.props
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.pack.json
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/scopedcss/bundle/JobQuest.styles.css
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.Up2Date
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/refint/JobQuest.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.pdb
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.genruntimeconfig.cache
+D:/FreelancingPlatform/JobQuest/JobQuest/obj/Debug/net8.0/ref/JobQuest.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Azure.Core.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Azure.Identity.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Humanizer.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Mono.TextTemplating.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.CodeDom.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Convention.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Hosting.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Runtime.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.TypedParts.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Drawing.Common.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Memory.Data.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Runtime.Caching.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Security.Permissions.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/System.Windows.Extensions.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/FreelancingPlatform/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.staticwebassets.runtime.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.AssemblyReference.cache
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.GeneratedMSBuildEditorConfig.editorconfig
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.AssemblyInfoInputs.cache
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.AssemblyInfo.cs
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.CoreCompileInputs.cache
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.MvcApplicationPartsAssemblyInfo.cs
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.MvcApplicationPartsAssemblyInfo.cache
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.sourcelink.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/refint/JobQuest.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.pdb
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/appsettings.Development.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/appsettings.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.staticwebassets.runtime.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.staticwebassets.endpoints.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.deps.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.runtimeconfig.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/JobQuest.pdb
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Azure.Core.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Azure.Identity.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Humanizer.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Mono.TextTemplating.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.CodeDom.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Convention.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Hosting.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.Runtime.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Drawing.Common.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Memory.Data.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Runtime.Caching.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Security.Permissions.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/System.Windows.Extensions.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/scopedcss/bundle/JobQuest.styles.css
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.build.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.development.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.JobQuest.Microsoft.AspNetCore.StaticWebAssets.props
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.JobQuest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.build.JobQuest.props
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.JobQuest.props
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.JobQuest.props
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/staticwebassets.pack.json
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.csproj.Up2Date
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/JobQuest.genruntimeconfig.cache
+/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/Debug/net8.0/ref/JobQuest.dll
