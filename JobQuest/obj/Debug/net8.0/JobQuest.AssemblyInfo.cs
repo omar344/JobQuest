@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d97ecb264e7e5858d7d11c3ac011bbbb129c1fb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ba3dc03715576dd09017b4715254b7e9e731ee1")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

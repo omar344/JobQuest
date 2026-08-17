@@ -1,0 +1,16 @@
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/bin/Debug/net10.0/JobQuest.Application.deps.json
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/bin/Debug/net10.0/JobQuest.Application.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/bin/Debug/net10.0/JobQuest.Application.pdb
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/bin/Debug/net10.0/JobQuest.Domain.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/bin/Debug/net10.0/JobQuest.Domain.pdb
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.csproj.AssemblyReference.cache
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.AssemblyInfoInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.AssemblyInfo.cs
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.csproj.CoreCompileInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.sourcelink.json
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.3FA1B6C2.Up2Date
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/refint/JobQuest.Application.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/JobQuest.Application.pdb
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Application/obj/Debug/net10.0/ref/JobQuest.Application.dll

@@ -1,0 +1,12 @@
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/bin/Debug/net10.0/JobQuest.Domain.deps.json
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/bin/Debug/net10.0/JobQuest.Domain.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/bin/Debug/net10.0/JobQuest.Domain.pdb
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.AssemblyInfoInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.AssemblyInfo.cs
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.csproj.CoreCompileInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.sourcelink.json
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/refint/JobQuest.Domain.dll
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/JobQuest.Domain.pdb
+/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Domain/obj/Debug/net10.0/ref/JobQuest.Domain.dll

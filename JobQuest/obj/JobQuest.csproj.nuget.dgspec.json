@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/JobQuest.csproj": {}
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/JobQuest.csproj": {}
   },
   "projects": {
-    "/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/JobQuest.csproj": {
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/JobQuest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/JobQuest.csproj",
+        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/JobQuest.csproj",
         "projectName": "JobQuest",
-        "projectPath": "/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/JobQuest.csproj",
+        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/JobQuest.csproj",
         "packagesPath": "/home/omar/.nuget/packages/",
-        "outputPath": "/home/omar/personal branding/portfolio projects/JobQuest/JobQuest/obj/",
+        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,6 @@
           "net8.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -86,15 +85,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             }
           ],
           "frameworkReferences": {
@@ -105,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/omar/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

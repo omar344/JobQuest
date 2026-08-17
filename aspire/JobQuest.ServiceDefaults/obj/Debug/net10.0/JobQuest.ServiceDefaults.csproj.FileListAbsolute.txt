@@ -1,0 +1,13 @@
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/bin/Debug/net10.0/JobQuest.ServiceDefaults.deps.json
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/bin/Debug/net10.0/JobQuest.ServiceDefaults.dll
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/bin/Debug/net10.0/JobQuest.ServiceDefaults.pdb
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.csproj.AssemblyReference.cache
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.AssemblyInfoInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.AssemblyInfo.cs
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.csproj.CoreCompileInputs.cache
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.sourcelink.json
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.dll
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/refint/JobQuest.ServiceDefaults.dll
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/JobQuest.ServiceDefaults.pdb
+/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/Debug/net10.0/ref/JobQuest.ServiceDefaults.dll

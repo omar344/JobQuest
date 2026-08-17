@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobQuest.Application\JobQuest.Application.csproj" />
+    <ProjectReference Include="..\JobQuest.Infrastructure\JobQuest.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\aspire\JobQuest.ServiceDefaults\JobQuest.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
