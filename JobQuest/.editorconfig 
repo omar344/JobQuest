@@ -1,0 +1,31 @@
+root = true
+
+[*.cs]
+# Core C# formatting conventions
+indent_style = space
+indent_size = 4
+end_of_line = lf
+insert_final_newline = true
+
+# Prefer file-scoped namespaces (reduces indentation levels)
+csharp_style_namespace_declarations = file_scoped:warning
+
+# Remove 'this.' noise for fields and properties
+dotnet_style_qualification_for_field = false:warning
+dotnet_style_qualification_for_property = false:warning
+
+# Modern C# features & style preferences
+csharp_style_prefer_primary_constructors = true:suggestion
+csharp_prefer_braces = true:warning
+dotnet_style_prefer_collection_expression = true:suggestion
+csharp_style_expression_bodied_methods = when_possible:suggestion
+csharp_style_expression_bodied_constructors = when_possible:suggestion
+
+# Naming Rules: Interfaces must start with 'I'
+dotnet_naming_rule.interfaces_start_with_i.severity = warning
+dotnet_naming_rule.interfaces_start_with_i.symbols = interface_symbol
+dotnet_naming_rule.interfaces_start_with_i.style = i_prefix_style
+
+dotnet_naming_symbols.interface_symbol.applicable_kinds = interface
+dotnet_naming_style.i_prefix_style.required_prefix = I
+dotnet_naming_style.i_prefix_style.capitalization = pascal_case
