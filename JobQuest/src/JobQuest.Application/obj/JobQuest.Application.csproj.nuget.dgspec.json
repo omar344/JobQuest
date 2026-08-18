@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj": {}
+  },
+  "projects": {
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj",
+        "projectName": "JobQuest.Application",
+        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj",
+        "packagesPath": "/home/omar/.nuget/packages/",
+        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj": {
+                "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/omar/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj",
+        "projectName": "JobQuest.Domain",
+        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj",
+        "packagesPath": "/home/omar/.nuget/packages/",
+        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "(, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/omar/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

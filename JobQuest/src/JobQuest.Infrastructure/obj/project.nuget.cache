@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "dgSpecHash": "Aj2dojmr+II=",
+  "success": true,
+  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.authentication/1.0.0/microsoft.aspnetcore.authentication.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.authentication.cookies/1.0.0/microsoft.aspnetcore.authentication.cookies.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.cryptography.internal/1.0.0/microsoft.aspnetcore.cryptography.internal.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/1.0.0/microsoft.aspnetcore.cryptography.keyderivation.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.dataprotection/1.0.0/microsoft.aspnetcore.dataprotection.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.dataprotection.abstractions/1.0.0/microsoft.aspnetcore.dataprotection.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.hosting.abstractions/1.0.0/microsoft.aspnetcore.hosting.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.hosting.server.abstractions/1.0.0/microsoft.aspnetcore.hosting.server.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.http/1.0.0/microsoft.aspnetcore.http.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.http.abstractions/1.0.0/microsoft.aspnetcore.http.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.http.extensions/1.0.0/microsoft.aspnetcore.http.extensions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.http.features/1.0.0/microsoft.aspnetcore.http.features.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.identity/1.0.0/microsoft.aspnetcore.identity.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/1.0.0/microsoft.aspnetcore.identity.entityframeworkcore.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.aspnetcore.webutilities/1.0.0/microsoft.aspnetcore.webutilities.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.entityframeworkcore/1.0.0/microsoft.entityframeworkcore.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.entityframeworkcore.relational/1.0.0/microsoft.entityframeworkcore.relational.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.caching.abstractions/1.0.0/microsoft.extensions.caching.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.caching.memory/1.0.0/microsoft.extensions.caching.memory.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.configuration.abstractions/1.0.0/microsoft.extensions.configuration.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.dependencyinjection/1.0.0/microsoft.extensions.dependencyinjection.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.2/microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.fileproviders.abstractions/1.0.0/microsoft.extensions.fileproviders.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.logging/1.0.0/microsoft.extensions.logging.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.logging.abstractions/1.0.0/microsoft.extensions.logging.abstractions.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.objectpool/1.0.0/microsoft.extensions.objectpool.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.options/1.0.0/microsoft.extensions.options.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.primitives/1.0.0/microsoft.extensions.primitives.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.extensions.webencoders/1.0.0/microsoft.extensions.webencoders.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/microsoft.net.http.headers/1.0.0/microsoft.net.http.headers.1.0.0.nupkg.sha512",
+    "/home/omar/.nuget/packages/remotion.linq/2.1.1/remotion.linq.2.1.1.nupkg.sha512",
+    "/home/omar/.nuget/packages/system.interactive.async/3.0.0/system.interactive.async.3.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "message": "JobQuest.Domain does not provide an inclusive lower bound for dependency Microsoft.AspNetCore.Identity.EntityFrameworkCore. Microsoft.AspNetCore.Identity.EntityFrameworkCore 1.0.0 was resolved instead.",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNetCore.Http' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hxrm-9w7p-39cc",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "libraryId": "Microsoft.AspNetCore.Http",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNetCore.Identity' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "libraryId": "Microsoft.AspNetCore.Identity",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.AspNetCore.Identity' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-vhvh-528q-ff3p",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj",
+      "libraryId": "Microsoft.AspNetCore.Identity",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
