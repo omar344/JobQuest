@@ -1,5 +1,6 @@
 using JobQuest.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace JobQuest.Infrastructure.Persistence;
 
