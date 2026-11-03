@@ -34,3 +34,5 @@
 /home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/obj/Debug/net10.0/refint/JobQuest.Infrastructure.dll
 /home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/obj/Debug/net10.0/JobQuest.Infrastructure.pdb
 /home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/obj/Debug/net10.0/ref/JobQuest.Infrastructure.dll
+/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/bin/Debug/net10.0/JobQuest.Infrastructure.runtimeconfig.json
+/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/obj/Debug/net10.0/JobQuest.Infrastructure.genruntimeconfig.cache

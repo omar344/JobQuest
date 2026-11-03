@@ -6,9 +6,6 @@ namespace JobQuest.Infrastructure.Persistence;
 
 public class PlatformDataDbContext : IdentityDbContext<ApplicationUser>
 {
-    public PlatformDataDbContext()
-    {
-    }
 
     public PlatformDataDbContext(DbContextOptions<PlatformDataDbContext> options) : base(options)
     {

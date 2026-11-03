@@ -1,13 +1,10 @@
-using JobQuest.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+using JobQuest.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<PlatformDataDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+// Register Infrastructure Services
+builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
-
 app.MapGet("/", () => "Hello World!");
 
 app.Run();
