@@ -1,7 +1,7 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.4.6">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\JobQuest.Api\JobQuest.Api.csproj" />
+    <ProjectReference Include="..\..\JobQuest.Api\JobQuest.Api.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

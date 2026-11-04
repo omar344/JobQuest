@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H7ow+xiFPQg=",
+  "dgSpecHash": "F/wriELVSow=",
   "success": true,
-  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
   "expectedPackageFiles": [
     "/home/omar/.nuget/packages/aspire.dashboard.sdk.linux-x64/13.4.6/aspire.dashboard.sdk.linux-x64.13.4.6.nupkg.sha512",
     "/home/omar/.nuget/packages/aspire.hosting/13.4.6/aspire.hosting.13.4.6.nupkg.sha512",
@@ -79,5 +79,18 @@
     "/home/omar/.nuget/packages/system.io.hashing/10.0.8/system.io.hashing.10.0.8.nupkg.sha512",
     "/home/omar/.nuget/packages/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MessagePack' 2.5.302 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qhrr-8q5h-9q3h",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+      "libraryId": "MessagePack",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

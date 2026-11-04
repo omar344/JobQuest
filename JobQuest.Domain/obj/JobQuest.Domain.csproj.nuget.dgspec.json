@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj": {}
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/JobQuest.Domain.csproj": {}
   },
   "projects": {
-    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj": {
+    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/JobQuest.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj",
+        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/JobQuest.Domain.csproj",
         "projectName": "JobQuest.Domain",
-        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/JobQuest.Domain.csproj",
+        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/JobQuest.Domain.csproj",
         "packagesPath": "/home/omar/.nuget/packages/",
-        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Domain/obj/",
+        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"

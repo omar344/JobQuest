@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tBOgIpu+SRY=",
+  "dgSpecHash": "3RRKPsOLc/E=",
   "success": true,
-  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj",
+  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Application/JobQuest.Application.csproj",
   "expectedPackageFiles": [
     "/home/omar/.nuget/packages/microsoft.aspnetcore.cryptography.internal/10.0.0/microsoft.aspnetcore.cryptography.internal.10.0.0.nupkg.sha512",
     "/home/omar/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/10.0.0/microsoft.aspnetcore.cryptography.keyderivation.10.0.0.nupkg.sha512",

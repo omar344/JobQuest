@@ -4151,8 +4151,8 @@
     },
     "JobQuest.ServiceDefaults/1.0.0": {
       "type": "project",
-      "path": "../../aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
-      "msbuildProject": "../../aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj"
+      "path": "../aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
+      "msbuildProject": "../aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4170,11 +4170,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Api/JobQuest.Api.csproj",
+      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Api/JobQuest.Api.csproj",
       "projectName": "JobQuest.Api",
-      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Api/JobQuest.Api.csproj",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Api/JobQuest.Api.csproj",
       "packagesPath": "/home/omar/.nuget/packages/",
-      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Api/obj/",
+      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/omar/.nuget/NuGet/NuGet.Config"
@@ -4189,14 +4189,14 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj": {
-              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj"
+            "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Application/JobQuest.Application.csproj": {
+              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Application/JobQuest.Application.csproj"
             },
-            "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj": {
-              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Application/JobQuest.Application.csproj"
+            "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj": {
+              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj"
             },
-            "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj": {
-              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Infrastructure/JobQuest.Infrastructure.csproj"
+            "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj": {
+              "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj"
             }
           }
         }

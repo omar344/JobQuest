@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj": {}
+    "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj": {}
   },
   "projects": {
-    "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj": {
+    "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+        "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
         "projectName": "JobQuest.AppHost",
-        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+        "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
         "packagesPath": "/home/omar/.nuget/packages/",
-        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/obj/",
+        "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"

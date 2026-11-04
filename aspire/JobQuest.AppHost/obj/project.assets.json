@@ -3864,11 +3864,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
       "projectName": "JobQuest.AppHost",
-      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/JobQuest.AppHost.csproj",
       "packagesPath": "/home/omar/.nuget/packages/",
-      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.AppHost/obj/",
+      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.AppHost/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/omar/.nuget/NuGet/NuGet.Config"
@@ -3881,7 +3881,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -3900,7 +3899,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Aspire.Dashboard.Sdk.linux-x64": {
@@ -4212,5 +4210,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MessagePack' 2.5.302 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qhrr-8q5h-9q3h",
+      "libraryId": "MessagePack",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

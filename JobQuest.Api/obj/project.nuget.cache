@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UQykPhc5oFg=",
+  "dgSpecHash": "Fuc9gkHEyqk=",
   "success": true,
-  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/src/JobQuest.Api/JobQuest.Api.csproj",
+  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Api/JobQuest.Api.csproj",
   "expectedPackageFiles": [
     "/home/omar/.nuget/packages/azure.core/1.50.0/azure.core.1.50.0.nupkg.sha512",
     "/home/omar/.nuget/packages/azure.identity/1.17.1/azure.identity.1.17.1.nupkg.sha512",

@@ -3,7 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\JobQuest.Application\JobQuest.Application.csproj" />
     <ProjectReference Include="..\JobQuest.Infrastructure\JobQuest.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\aspire\JobQuest.ServiceDefaults\JobQuest.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\aspire\JobQuest.ServiceDefaults\JobQuest.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>

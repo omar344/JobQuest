@@ -965,11 +965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
+      "projectUniqueName": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
       "projectName": "JobQuest.ServiceDefaults",
-      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
+      "projectPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
       "packagesPath": "/home/omar/.nuget/packages/",
-      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/",
+      "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/omar/.nuget/NuGet/NuGet.Config"
@@ -982,7 +982,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -1001,7 +1000,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.Extensions.Http.Resilience": {

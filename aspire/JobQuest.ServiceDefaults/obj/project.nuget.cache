@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gaARhbM1J+k=",
+  "dgSpecHash": "63O9rQ9wsAI=",
   "success": true,
-  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
+  "projectFilePath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/JobQuest.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "/home/omar/.nuget/packages/microsoft.extensions.ambientmetadata.application/10.6.0/microsoft.extensions.ambientmetadata.application.10.6.0.nupkg.sha512",
     "/home/omar/.nuget/packages/microsoft.extensions.compliance.abstractions/10.6.0/microsoft.extensions.compliance.abstractions.10.6.0.nupkg.sha512",

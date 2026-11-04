@@ -15,7 +15,7 @@ public class JobQuest_Api : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the JobQuest_Api project.
     /// </summary>
-    public string ProjectPath => """/home/omar/CV Projects/jobquest/JobQuest/src/JobQuest.Api/JobQuest.Api.csproj""";
+    public string ProjectPath => """/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Api/JobQuest.Api.csproj""";
 
     /// <summary>
     /// Gets a value indicating whether building the project before running it should be suppressed.
