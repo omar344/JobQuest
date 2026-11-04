@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobQuest.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccc880200997bcf0f94e4724576c5a669195e623")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b84a303f46aec7be1a41854fabbe074a71162017")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobQuest.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobQuest.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
