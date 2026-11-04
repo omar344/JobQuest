@@ -13,6 +13,7 @@
         "packagesPath": "/home/omar/.nuget/packages/",
         "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Application/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"
         ],
@@ -50,8 +51,23 @@
           "dependencies": {
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "10.0.14",
+            "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+            "Microsoft.Extensions.Http.Resilience": "10.6.0",
+            "Microsoft.Extensions.ServiceDiscovery": "10.6.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
+            "System.Security.Cryptography.Pkcs": "9.0.21"
           },
           "imports": [
             "net461",
@@ -356,6 +372,7 @@
         "packagesPath": "/home/omar/.nuget/packages/",
         "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Domain/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"
         ],
@@ -389,8 +406,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "10.0.14",
+            "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+            "Microsoft.Extensions.Http.Resilience": "10.6.0",
+            "Microsoft.Extensions.ServiceDiscovery": "10.6.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
+            "System.Security.Cryptography.Pkcs": "9.0.21"
           },
           "imports": [
             "net461",
@@ -695,6 +727,7 @@
         "packagesPath": "/home/omar/.nuget/packages/",
         "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/JobQuest.Infrastructure/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"
         ],
@@ -733,20 +766,30 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[10.0.14, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[10.0.14, )"
+              "version": "[10.0.14, )",
+              "versionCentrallyManaged": true
             },
             "System.Security.Cryptography.Pkcs": {
               "target": "Package",
-              "version": "[9.0.21, )"
+              "version": "[9.0.21, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "10.0.14",
+            "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+            "Microsoft.Extensions.Http.Resilience": "10.6.0",
+            "Microsoft.Extensions.ServiceDiscovery": "10.6.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
+            "System.Security.Cryptography.Pkcs": "9.0.21"
           },
           "imports": [
             "net461",

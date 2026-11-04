@@ -13,6 +13,7 @@
         "packagesPath": "/home/omar/.nuget/packages/",
         "outputPath": "/home/omar/CV Projects/jobquest/JobQuest/aspire/JobQuest.ServiceDefaults/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/home/omar/.nuget/NuGet/NuGet.Config"
         ],
@@ -46,32 +47,53 @@
           "dependencies": {
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[10.6.0, )"
+              "version": "[10.6.0, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.ServiceDiscovery": {
               "target": "Package",
-              "version": "[10.6.0, )"
+              "version": "[10.6.0, )",
+              "versionCentrallyManaged": true
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
-              "version": "[1.15.3, )"
+              "version": "[1.15.3, )",
+              "versionCentrallyManaged": true
             },
             "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "[1.15.3, )"
+              "version": "[1.15.3, )",
+              "versionCentrallyManaged": true
             },
             "OpenTelemetry.Instrumentation.AspNetCore": {
               "target": "Package",
-              "version": "[1.15.2, )"
+              "version": "[1.15.2, )",
+              "versionCentrallyManaged": true
             },
             "OpenTelemetry.Instrumentation.Http": {
               "target": "Package",
-              "version": "[1.15.1, )"
+              "version": "[1.15.1, )",
+              "versionCentrallyManaged": true
             },
             "OpenTelemetry.Instrumentation.Runtime": {
               "target": "Package",
-              "version": "[1.15.1, )"
+              "version": "[1.15.1, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "10.0.14",
+            "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+            "Microsoft.Extensions.Http.Resilience": "10.6.0",
+            "Microsoft.Extensions.ServiceDiscovery": "10.6.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
+            "System.Security.Cryptography.Pkcs": "9.0.21"
           },
           "imports": [
             "net461",

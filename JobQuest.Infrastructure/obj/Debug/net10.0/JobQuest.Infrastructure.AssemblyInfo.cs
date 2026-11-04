@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobQuest.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4da0a583dfbe78c75a1fe6719aa39991ad50913")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a12fa5a897b82e035c8bc7d663ea142a6e1d3fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobQuest.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobQuest.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
