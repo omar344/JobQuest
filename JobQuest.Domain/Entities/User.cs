@@ -1,13 +1,48 @@
 namespace JobQuest.Domain.Entities;
 
+using JobQuest.Domain.ValueObjects;
+
 public class User
 {
-    public int Id { get; set; }
-    public string FirstName { get; set; } = default!;
-    public string LastName { get; set; } = default!;
-    public string Email { get; set; } = default!;
-    public string Password { get; set; } = default!;
-    public string Username { get; set; } = default!;
-    public string Country { get; set; } = default!;
-    public string Phone { get; set; } = default!;
+    public int Id { get; private set; }
+
+    public Email Email { get; private set; } = null!;
+
+    public string PasswordHash { get; private set; } = null!;
+
+    public string? Username { get; private set; }
+
+    public DateTime CreatedAt { get; private set; }
+
+    // Required by EF Core
+    protected User()
+    {
+    }
+
+    private User(Email email, string passwordHash, string? username)
+    {
+        Email = email;
+        PasswordHash = passwordHash;
+        Username = username;
+        CreatedAt = DateTime.UtcNow;
+    }
+
+    public static User Create(
+    Email email,
+    string passwordHash,
+    string? username = null)
+    {
+        ArgumentNullException.ThrowIfNull(email);
+
+        if (string.IsNullOrWhiteSpace(passwordHash))
+            throw new ArgumentException(
+                "Password hash is required.",
+                nameof(passwordHash));
+
+        username = string.IsNullOrWhiteSpace(username)
+            ? null
+            : username.Trim();
+
+        return new User(email, passwordHash, username);
+    }
 }

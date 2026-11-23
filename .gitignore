@@ -1,0 +1,10 @@
+# .NET build artifacts
+bin/
+obj/
+
+# IDE files
+.vs/
+.vscode/
+
+# Logs
+*.log

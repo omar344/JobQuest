@@ -28,10 +28,8 @@ public class FreelancerRepository(PlatformDataDbContext context) : IFreelancerRe
             HourlyRate = freelancerDto.HourlyRate,
             Experience = freelancerDto.Experience,
             Country = freelancerDto.Country,
-            Phone = freelancerDto.Phone,
-            Email = "to test",
-            Password = "***",
-            Username = "........"
+            Phone = freelancerDto.Phone
+            // Email and credentials are managed through ApplicationUser / Identity.
         };
 
         context.Freelancers.Add(freelancer);
