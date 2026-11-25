@@ -7,10 +7,7 @@ services:
       MSSQL_PID: Developer
       MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
     ports:
-      - mode: ingress
-        target: 1433
-        published: "1434"
-        protocol: tcp
+      - "1435:1433"
     volumes:
       - sqlserver_data:/var/opt/mssql
     restart: unless-stopped

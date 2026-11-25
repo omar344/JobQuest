@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace JobQuest.Infrastructure.Persistence.Migrations
+namespace JobQuest.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -56,13 +56,10 @@ namespace JobQuest.Infrastructure.Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,13 +75,10 @@ namespace JobQuest.Infrastructure.Persistence.Migrations
                     Specialization = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HourlyRate = table.Column<int>(type: "int", nullable: false),
                     Experience = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -326,8 +320,7 @@ namespace JobQuest.Infrastructure.Persistence.Migrations
                         name: "FK_Payments_Contracts_ContractID",
                         column: x => x.ContractID,
                         principalTable: "Contracts",
-                        principalColumn: "ContractID",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "ContractID");
                 });
 
             migrationBuilder.CreateIndex(
@@ -392,8 +385,7 @@ namespace JobQuest.Infrastructure.Persistence.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Payments_ContractID",
                 table: "Payments",
-                column: "ContractID",
-                unique: true);
+                column: "ContractID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Proposals_FreelancerID",

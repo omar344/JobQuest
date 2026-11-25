@@ -65,9 +65,10 @@ public class PaymentConfigurations : IEntityTypeConfiguration<Payment>
         builder.HasKey(pt => pt.PaymentID);
 
         builder.HasOne(pt => pt.Contract)
-            .WithOne(c => c.Payment)
-            .HasForeignKey<Payment>(pt => pt.ContractID)
-            .IsRequired();
+            .WithMany(c => c.Payments)
+            .HasForeignKey(pt => pt.ContractID)
+            .IsRequired()
+            .OnDelete(DeleteBehavior.NoAction);
 
         builder.HasOne(p => p.Client)
             .WithMany(c => c.Payments)

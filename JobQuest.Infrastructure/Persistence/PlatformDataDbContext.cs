@@ -23,5 +23,24 @@ public class PlatformDataDbContext : IdentityDbContext<ApplicationUser>
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(PlatformDataDbContext).Assembly);
+
+        modelBuilder.Entity<Payment>()
+            .HasOne(p => p.Contract)
+            .WithMany(c => c.Payments)
+            .HasForeignKey(p => p.ContractID)
+            .OnDelete(DeleteBehavior.NoAction);
+
+        modelBuilder.Entity<Job>()
+.Property(j => j.JobBudget)
+.HasPrecision(18, 2);
+
+        modelBuilder.Entity<Payment>()
+            .Property(p => p.Amount)
+            .HasPrecision(18, 2);
+
+        modelBuilder.Entity<Proposal>()
+            .Property(p => p.BidAmount)
+            .HasPrecision(18, 2);
+
     }
 }

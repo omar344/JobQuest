@@ -1,12 +1,12 @@
 namespace JobQuest.Domain.Entities;
 
-using JobQuest.Domain.ValueObjects;
+
 
 public class User
 {
     public int Id { get; private set; }
 
-    public Email Email { get; private set; } = null!;
+    public string Email { get; set; } = string.Empty;
 
     public string PasswordHash { get; private set; } = null!;
 
@@ -19,7 +19,7 @@ public class User
     {
     }
 
-    private User(Email email, string passwordHash, string? username)
+    private User(string email, string passwordHash, string? username)
     {
         Email = email;
         PasswordHash = passwordHash;
@@ -28,7 +28,7 @@ public class User
     }
 
     public static User Create(
-    Email email,
+    string email,
     string passwordHash,
     string? username = null)
     {
