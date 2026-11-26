@@ -2,7 +2,7 @@
 
 JobQuest is a platform that connects freelancers with clients to collaborate on job opportunities. This repository contains the backend API.
 
-> Status: under active development. The solution structure, domain model, and infrastructure are in place; API endpoints are being built.
+> Status: under active development. The solution structure, domain model, and infrastructure are in place; API endpoints are being built. An earlier working implementation (API controllers, JWT authentication) lives on the `app.v1` and `app.v2` branches.
 
 ## Tech Stack
 
