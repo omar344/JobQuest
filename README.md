@@ -1,34 +1,73 @@
 # JobQuest
 
-JobQuest is a .NET backend solution for the JobQuest platform.
+JobQuest is a platform that connects freelancers with clients to collaborate on job opportunities. This repository contains the backend API.
 
-## Solution structure
+> Status: under active development. The solution structure, domain model, and infrastructure are in place; API endpoints are being built.
 
-- `JobQuest.Api` — API host
-- `JobQuest.Application` — application services
-- `JobQuest.Domain` — domain model
-- `JobQuest.Infrastructure` — infrastructure
-- `aspire/JobQuest.ServiceDefaults` — Aspire defaults
-- `aspire/JobQuest.AppHost` — app host
+## Tech Stack
+
+- **.NET 10** / ASP.NET Core
+- **Entity Framework Core** with **SQL Server 2022** (Docker)
+- **ASP.NET Core Identity** for authentication and user management
+- **.NET Aspire** for local orchestration and observability defaults
+- **Central Package Management** via `Directory.Packages.props` (see [DEPENDENCIES.md](DEPENDENCIES.md))
 
 ## Architecture
 
-- Domain owns core business logic
-- Application owns use cases
-- Infrastructure owns EF Core and integrations
-- API exposes the application over HTTP
+Clean Architecture with strict layer separation:
 
-## Package management
-
-Package versions are centralized through `Directory.Packages.props`. See [DEPENDENCIES.md](DEPENDENCIES.md).
-
-## Local setup
-
-```bash
-dotnet restore
-dotnet build JobQuest.sln -nologo
+```
+JobQuest.sln
+├── JobQuest.Api/            # Composition root and HTTP layer
+├── JobQuest.Application/    # DTOs, interfaces, use-case contracts, DI registration
+├── JobQuest.Domain/         # Entities, enums, and domain model (no infrastructure concerns)
+├── JobQuest.Infrastructure/ # EF Core persistence, repositories, service implementations
+└── aspire/
+    ├── JobQuest.AppHost/          # .NET Aspire orchestration host
+    └── JobQuest.ServiceDefaults/  # Shared startup and observability defaults
 ```
 
-## Contributing
+## Domain Model
 
-Contributions are welcome and should stay aligned with the layered architecture.
+- **Users**: `ApplicationUser` (ASP.NET Core Identity), `Client`, `Freelancer`, `Skill`
+- **Marketplace**: `Job`, `Proposal`, `Contract`, `Payment`
+- **Lifecycle enums**: `JobStatus`, `JobCategoryEnum`, `ProposalStatus`, `ContractStatus`, `PaymentStatus`
+
+## Getting Started
+
+### Prerequisites
+
+- .NET 10 SDK
+- Docker Desktop (for SQL Server)
+
+### Database
+
+Start SQL Server in Docker:
+
+```bash
+docker compose up -d
+```
+
+This runs SQL Server 2022 (Developer edition) on port **1434** with a persistent volume. Set the `MSSQL_SA_PASSWORD` environment variable before starting.
+
+### Run
+
+```bash
+dotnet run --project JobQuest.Api
+```
+
+or through the Aspire AppHost for the full orchestrated experience:
+
+```bash
+dotnet run --project aspire/JobQuest.AppHost
+```
+
+## Roadmap
+
+- [ ] REST endpoints for jobs, proposals, contracts, and payments
+- [ ] Authentication and authorization flows
+- [ ] Application-layer services and validation
+
+## License
+
+See [LICENSE](LICENSE).
